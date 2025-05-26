@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/macaroni.pub
+RWTGIaBQjhQnA+pfHzPWldxPuPARzIZ+TRyABW1LOcVQptdt2YDYZVv37QqaNQVTsm23k406aGAPznVyg2fJzrnro43hTWNORA8=
+SHA256 (Pkgfile) = 419ed8dc39aee4319a61fceeac098ddaaf590cba15810990ca0fde5f9e5644b5
+SHA256 (.footprint) = 6ac88b684590dff12ce74b92daa23b3115c22d0599d325d3d4695017921b70ad
+SHA256 (kanshi-1.7.0.tar.gz) = d35b2a0b41a36cc55066320ae7ae5b176450546a4ed67ee09e7241ecd36bfc73

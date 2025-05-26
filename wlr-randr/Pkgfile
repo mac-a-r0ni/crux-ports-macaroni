@@ -1,0 +1,26 @@
+# Description: Utility to manage outputs of a Wayland compositor
+# URL: https://codeberg.org/emersion/wlr-randr
+# Maintainer: Jay Lanagan, j at lngn dot net
+# Depends on: meson
+
+name=wlr-randr
+version=0.5.0
+release=1
+source=(https://gitlab.freedesktop.org/emersion/$name/-/archive/v$version/$name-v$version.tar.gz)
+renames=($name-$version.tar.gz)
+
+build() {
+
+	meson setup $name-v$version build \
+		--prefix=/usr \
+		--sysconfdir=/etc \
+		--buildtype=release \
+		--wrap-mode=nofallback \
+		-Db_lto=true \
+		-Db_pie=true \
+		-Dstrip=true
+
+	meson compile -C build
+	DESTDIR=$PKG meson install -C build
+
+}

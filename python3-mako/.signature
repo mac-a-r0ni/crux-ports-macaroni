@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/macaroni.pub
+RWTGIaBQjhQnA49IENo1CeyTLV0j7SNbP8mLjbHyu0Y8eMzwGe0oGulIoaXwsGfoINmbJargOMaJSpZdFhYaJ7K21c6AAVDmqQo=
+SHA256 (Pkgfile) = 51d43ee4be069eb6275a26b47dfc5760062a8cae8ace88a0b4d2ad91b2882a0c
+SHA256 (.footprint) = b823b7d2e1a5aa87d625dcc9e6df0fa248a533ef1b452177eef89b2409dd653e
+SHA256 (mako-1.3.10.tar.gz) = 99579a6f39583fa7e5630a28c3c1f440e4e97a414b80372649c0ce338da2ea28

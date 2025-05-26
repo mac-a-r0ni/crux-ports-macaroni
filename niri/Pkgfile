@@ -1,0 +1,28 @@
+# Description: A scrollable-tiling Wayland compositor
+# URL: https://github.com/YaLTeR/niri
+# Maintainer: Jay Lanagan, j at lngn dot net
+# Depends on: clang rust cairo libdisplay-info libinput pipewire seatd
+# Optional: alacritty fuzzel mako swaybg swaylock waybar xdg-desktop-portal-gnome xdg-desktop-portal-gtk xwayland-satellite
+
+name=niri
+version=25.05.1
+release=1
+source=(https://github.com/YaLTeR/$name/archive/v${version}/$name-$version.tar.gz niri.desktop)
+
+build() {
+  prt-get isinst sccache && export RUSTC_WRAPPER=/usr/bin/sccache
+  mkdir "$PKGMK_SOURCE_DIR/rust" || true
+  export CARGO_HOME="$PKGMK_SOURCE_DIR/rust"
+
+  export NIRI_BUILD_COMMIT="8ba57fc"
+
+  cargo build --manifest-path $name-$version/Cargo.toml --release --no-default-features --features dbus,xdp-gnome-screencast
+
+  cd $name-$version
+
+  install -vDm 755 {target/release/$name,resources/$name-session} -t "$PKG/usr/bin/"
+  install -vDm 644 $PKGMK_SOURCE_DIR/$name.desktop -t "$PKG/usr/share/wayland-sessions/"
+  install -vDm 644 resources/$name-portals.conf -t "$PKG/usr/share/xdg-desktop-portal/"
+  install -vDm 644 resources/default-config.kdl -t "$PKG/etc/skel/$name/"
+
+}

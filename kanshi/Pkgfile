@@ -1,0 +1,26 @@
+# Description: Application launcher for wlroots based Wayland compositors
+# URL: https://gitlab.freedesktop.org/emersion/kanshi
+# Maintainer: Jay Lanagan, j at lngn dot net
+# Depends on: libscfg scdoc wayland
+
+name=kanshi
+version=1.7.0
+release=1
+source=(https://gitlab.freedesktop.org/emersion/kanshi/-/archive/v1.7.0/kanshi-v1.7.0.tar.gz)
+renames=($name-$version.tar.gz)
+
+build() {
+
+	meson setup $name-v$version build \
+		--prefix=/usr \
+		--sysconfdir=/etc \
+		--buildtype=release \
+		--wrap-mode=nofallback \
+		-Db_lto=true \
+		-Db_pie=true \
+		-Dstrip=true
+
+	meson compile -C build
+	DESTDIR=$PKG meson install -C build
+
+}

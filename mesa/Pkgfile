@@ -1,0 +1,62 @@
+# Description: Mesa 3D Graphics Library
+# URL: https://www.mesa3d.org/
+# Maintainer: CRUX Xorg Team, xorg-ports at crux dot nu
+# Arch Maintainer: CRUX-ARM System Team, at crux-arm devel dot nu
+# Depends on: elfutils libdrm libglvnd llvm python3-mako python3-pycparser python3-pyyaml xorg-libxdamage xorg-libxrandr xorg-libxshmfence xorg-libxvmc xorg-libxxf86vm
+# Optional: directx-headers glslang libclc libunwind libva libvdpau lm_sensors lua python3-ply rust-bindgen spirv-llvm-translator vulkan-loader wayland-protocols
+
+name=mesa
+version=25.1.1
+release=1
+source=(https://archive.mesa3d.org/$name-$version.tar.xz)
+
+build() {
+
+  prt-get isinst directx-headers && PKGMK_MESA_GALLIUM+='d3d12,'
+  prt-get isinst libclc spirv-llvm-translator && PKGMK_MESA+=' -D gallium-opencl=icd'
+  prt-get isinst libclc rust-bindgen spirv-llvm-translator && PKGMK_MESA+=' -D gallium-rusticl=true'
+  prt-get isinst glslang python3-ply && PKGMK_MESA+=' -D vulkan-drivers=auto -D vulkan-layers=device-select,intel-nullhw,overlay' || PKGMK_MESA+=' -D vulkan-drivers='
+  prt-get isinst libclc && PKGMK_MESA_GALLIUM+='iris,'
+  prt-get isinst libunwind && PKGMK_MESA+=' -D libunwind=enabled'
+  prt-get isinst libva && PKGMK_MESA+=' -D gallium-va=enabled' || PKGMK_MESA+=' -D gallium-va=disabled'
+#  prt-get isinst libvdpau && PKGMK_MESA+=' -D gallium-vdpau=enabled' || PKGMK_MESA+=' -D gallium-vdpau=disabled'
+  prt-get isinst lm_sensors && PKGMK_MESA+=' -D lmsensors=enabled'
+  prt-get isinst vulkan-loader && PKGMK_MESA_GALLIUM+='zink,'
+  prt-get isinst wayland-protocols && PKGMK_MESA_PLATFORMS+='wayland'
+  ## for future references
+  #prt-get isinst xorg-libxdamage xorg-libxrandr xorg-libxshmfence xorg-libxvmc xorg-libxxf86vm && PKGMK_MESA_PLATFORMS+=',x11'
+  PKGMK_MESA_PLATFORMS+=',x11'
+
+  printf '%s' "$version-$release" > $name-$version/VERSION
+
+  meson setup build mesa-$version $PKGMK_MESA \
+    --prefix=/usr \
+    --sysconfdir=/etc \
+    --buildtype=plain \
+    -D b_lto=false \
+    -D b_pie=false \
+    -D b_pch=false \
+    -D egl=enabled \
+    -D llvm=enabled \
+    -D shared-llvm=enabled \
+    -D gbm=enabled \
+    -D gles1=disabled \
+    -D gles2=enabled \
+    -D glx=dri \
+    -D osmesa=true \
+    -D gallium-xa=disabled \
+    -D gallium-drivers=${PKGMK_MESA_GALLIUM}etnaviv,lima,panfrost,svga,v3d,vc4,nouveau,r300,r600,radeonsi,virgl \
+    -D platforms=${PKGMK_MESA_PLATFORMS#,} \
+    -D shared-glapi=enabled \
+    -D video-codecs=vc1dec,h264dec,h264enc,h265dec,h265enc \
+    -D glvnd=enabled
+
+  meson compile -C build -j ${JOBS:-1}
+  DESTDIR=$PKG meson install -C build
+
+#  cd mesa-$version
+#  install -Dm 0755 $SRC/build/src/egl/opengl/{eglinfo,eglgears_wayland,eglgears_x11,eglkms,egltri_wayland,egltri_x11,peglgears,xeglgears,xeglthreads} -t "$PKG/usr/bin/"
+
+  # indirect rendering symlink
+  ln -s libGLX_mesa.so.0 $PKG/usr/lib/libGLX_indirect.so.0
+}

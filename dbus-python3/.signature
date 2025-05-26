@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/macaroni.pub
+RWTGIaBQjhQnAxOlJfasYqGSpQ0w9rw8/7OnvsroTH1fEhISiqWp39ino0SaS9IGJM3nzeVQs7VgtoOHG15EFGg6qnd0AGJDsww=
+SHA256 (Pkgfile) = ee8fc5e53392655b6b5d4307e9b53fee5351d7c03ce787cc17c7e12fb2353fb4
+SHA256 (.footprint) = b467ce91440e235afb93d987ce7eba77c152a5923b19eb57c56db8736a191478
+SHA256 (dbus-python-1.4.0.tar.xz) = c36b28f10ffcc8f1f798aca973bcc132f91f33eb9b6b8904381b4077766043d5

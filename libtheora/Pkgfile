@@ -1,0 +1,25 @@
+# Description: A free and open video compression format from the Xiph.org Foundation.
+# URL: http://www.theora.org/
+# Maintainer: Danny Rawlins, crux at romster dot me
+# Arch Maintainer: CRUX-ARM System Team, devel at crux-arm dot nu
+# Packager: Matt Housh, jaeger at crux dot nu
+# Depends on: libvorbis
+
+name=libtheora
+version=1.2.0
+release=1
+source=(https://downloads.xiph.org/releases/theora/$name-$version.tar.gz)
+
+build() {
+  cd $name-$version
+
+  ./configure --prefix=/usr \
+              --disable-examples \
+              --build=aarch64-unknown-linux-gnueabi
+
+  make
+  make DESTDIR=$PKG install
+
+  rm -r $PKG/usr/share/doc
+  rmdir $PKG/usr/share
+}

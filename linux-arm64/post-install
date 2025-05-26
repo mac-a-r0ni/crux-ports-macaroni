@@ -1,0 +1,10 @@
+#!/bin/sh
+
+version=6.12.30
+
+if [ $(command -v dracut) ]; then
+	echo "dracut: generating initramfs for kernel $version..."
+	dracut --force --kver ${version}-CRUX /boot/initramfs
+fi
+
+depmod ${version}-CRUX

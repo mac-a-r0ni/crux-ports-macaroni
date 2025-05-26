@@ -1,0 +1,20 @@
+# Description: D-Bus Python bindings
+# URL: http://freedesktop.org/wiki/Software/DBusBindings
+# Maintainer: Tim Biermann, tbier at posteo dot de
+# Depends on: dbus-glib python3-wheel
+
+name=dbus-python3
+version=1.4.0
+release=1
+source=(https://dbus.freedesktop.org/releases/dbus-python/dbus-python-$version.tar.xz)
+
+build() {
+  meson setup dbus-python-$version build \
+    --prefix=/usr \
+    --buildtype=plain \
+    --wrap-mode nodownload \
+    -D b_lto=true \
+    -D b_pie=true
+  meson compile -C build
+  DESTDIR=$PKG meson install -C build
+}

@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/macaroni.pub
+RWTGIaBQjhQnAyjSufTQKzYJR7o5ceiYaKI+mt1caR8b639TJhQVgOxBoEwQGQ1adtSoP7yLDSKaZ3vWsblm4z49Yg0mJ9Es/g0=
+SHA256 (Pkgfile) = dbe51ae908d13f2fac8d54b1aee646f125fd78f1c332986e99c07c9351df30e0
+SHA256 (.footprint) = d4cce3dfc6e7310a031f9250248f2165e3fe5fe76edeeb47c72d6bd357af452f
+SHA256 (libtheora-1.2.0.tar.gz) = 279327339903b544c28a92aeada7d0dcfd0397b59c2f368cc698ac56f515906e

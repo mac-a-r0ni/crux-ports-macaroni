@@ -1,0 +1,37 @@
+# Description: the Rust language, binary version
+# URL: https://rust-lang.org/
+# Maintainer: John McQuah, jmcquah at disroot dot org
+# Depends on: llvm
+
+name=rust-bin
+version=1.87.0
+release=1
+LIBC=$(awk -v RS="" -v FS="\n" '/\nusr\/lib\/libc.so\n/ { print $1 }' /var/lib/pkg/db)
+[ "$LIBC" != glibc ] || LIBC=gnu
+source=(https://static.rust-lang.org/dist/rust-$version-aarch64-unknown-linux-$LIBC.tar.gz)
+
+build() {
+  cd rust-$version-aarch64-unknown-linux-$LIBC
+  ./install.sh --prefix=/usr --destdir=$PKG --disable-ldconfig
+
+  # clean up junk files
+  mv $PKG/usr/libexec/* $PKG/usr/lib
+  rmdir $PKG/usr/libexec
+  rm -rf $PKG/usr/share/doc
+  prt-get isinst bash-completion >/dev/null || rm -rf $PKG/usr/etc/bash_completion.d
+  prt-get isinst zsh >/dev/null || rm -rf $PKG/usr/share/zsh
+  rm -f $PKG/usr/lib/rustlib/{install.log,uninstall.sh}
+}
+
+make_footprint() {
+  pkginfo -f "$PKGMK_PACKAGE_DIR/$name#$version-$release.pkg.tar.$PKGMK_COMPRESSION_MODE" \
+    | sed -e 's,\(gnu\|musl\)\(/\|$\),LIBC\2,' \
+          -e '/[0-9a-f]\{16\}/d; /lib\/self-contained/d' \
+          -e '/librustc-stable.*\(dfsan\|safestack\).a/d' \
+          -e '/libLLVM.*19/d' | sort -k 3
+  # lib/self-contained/ path only appears in the musl tarball,
+  # libLLVM.*19 and librustc-stable.* paths only appear in the glibc tarball.
+  # Filenames with 16-digit random hashes will also be different between the
+  # two tarballs. Delete such paths here, and the same footprint file can 
+  # serve for both libc providers.
+}

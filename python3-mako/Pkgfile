@@ -1,0 +1,18 @@
+# Description: A template library written in Python
+# URL: https://www.makotemplates.org/
+# Maintainer: CRUX System Team, core-ports at crux dot nu
+# Depends on: python3-markupsafe
+
+name=python3-mako
+version=1.3.10
+release=1
+source=(https://pypi.org/packages/source/m/mako/mako-$version.tar.gz)
+
+build() {
+	cd mako-$version
+
+    /usr/bin/python3 setup.py build
+
+    /usr/bin/python3 setup.py install --prefix=/usr \
+        --root=$PKG --optimize=1
+}

@@ -1,0 +1,26 @@
+# Description: A C library for a simple configuration file format
+# URL: https://codeberg.org/emersion/libscfg
+# Maintainer: Jay Lanagan, j at lngn dot net
+# Depends on: meson
+
+name=libscfg
+version=0.1.1
+release=1
+source=(https://codeberg.org/emersion/libscfg/archive/v$version.tar.gz)
+renames=($name-$version.tar.gz)
+
+build() {
+
+	meson setup $name build \
+		--prefix=/usr \
+		--sysconfdir=/etc \
+		--buildtype=release \
+		--wrap-mode=nofallback \
+		-Db_lto=true \
+		-Db_pie=true \
+		-Dstrip=true
+
+	meson compile -C build
+	DESTDIR=$PKG meson install -C build
+
+}

@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/macaroni.pub
+RWTGIaBQjhQnAwYsXsAPuAz1nE9emlKoolx9k6CtzErio/HgjU+nFU1FuedGTrLshiG0UOURMGd1EI7fIBXOlTVjjkmIMRuaSAI=
+SHA256 (Pkgfile) = 537b3c0f377141b595cb2a195495113044108aff2e2bc338e78a2656d37692bd
+SHA256 (.footprint) = 44724f6dfbce9837913674f9829df944a13deb283bbad33ad94e3d186d2d68bf
+SHA256 (fuzzel-1.12.0.tar.gz) = 7f23b86d8fc635c368c69be7227aa7f8068a6ec7d07305a33c12db259400d3e8

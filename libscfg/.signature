@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/macaroni.pub
+RWTGIaBQjhQnA1s+9ugYgJLURR7t1nOLGuhE+d4HI2z9kJiP1Y7B2O6sulf3n4dJjEsx+fb7ECeEIWARKA3wE9UqQq6TmaETdgE=
+SHA256 (Pkgfile) = 8f3f13c1c8c191d3e99c37afcf8732963430320bdf7324e1ffefd368f06333cf
+SHA256 (.footprint) = 47b2cb2af1a768ca554d8d6c2512667546d7548b0a9b3e65d47d5be08d17f0e5
+SHA256 (libscfg-0.1.1.tar.gz) = 851f889985e89637db430409431e63db5e0a150f1a9e18a4f4ccf1e6612c5915

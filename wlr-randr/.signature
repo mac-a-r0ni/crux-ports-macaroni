@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/macaroni.pub
+RWTGIaBQjhQnAxowL875KYn9uweoC5uRqiIdSf9z5Q0FKMmfgWw4zH4ExcIFpInXBcPKt1VJEFvsD/TgCbC6bowltqmFpKPxFQQ=
+SHA256 (Pkgfile) = bdbf6c7aa2fe9adb5ce5782094745615f2e68d4c7de2eb0832d022538fc5a983
+SHA256 (.footprint) = 00e7a48ee5f6721c8cdbf0a2cbc7306c577367b710829b2d34e310edd0bcc7c5
+SHA256 (wlr-randr-0.5.0.tar.gz) = c566d94fddb84f801c733f1415a4ad5b75870305346363074cbdf468d4ac263a

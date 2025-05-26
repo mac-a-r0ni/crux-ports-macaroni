@@ -1,0 +1,23 @@
+# rust-bin README
+
+This port is provided as a convenience for users who are interested in
+compiling rust code, but are otherwise discouraged by the prospect of 
+rebuilding a toolchain every six weeks. As a **consumer** of rust code 
+you will enjoy mostly the same experience using this port as you would 
+with opt/rust. All you need to do is put the line 
+  rust-bin: rust
+into your prt-get aliases file, to ensure that dependency resolution 
+does not trigger building rust from source.
+
+Caution: if you want to **author** a rust project, and you rely on hints
+from an IDE, the absence of binaries in the expected location /usr/libexec
+might cause problems. Feel free to create a symlink for:
+  /usr/lib/rust-analyzer-proc-macro-srv,
+because chrpath cannot accomplish the libexec-dir-change that the patches
+for opt/rust would do.
+
+Starting with rust 1.85.1, this port is flexible enough to accommodate
+two different libc implementations: glibc and musl. There might be some
+ports that fail to compile with the less-tested musl variant of rust-bin.
+If you anticipate needing to compile such ports, you should install rust
+from source instead.

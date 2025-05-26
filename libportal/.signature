@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/macaroni.pub
+RWTGIaBQjhQnA5R0MT75pZAgInJI7ffC3wqReuX6kCnll+TyIvuOBBae4dLfpn+mOSoaq5ITsd1BVUhQr6OUwv5biK6S5mVsoQg=
+SHA256 (Pkgfile) = 04f947b584599dc375ef6a9906aba4c9740cc4bddf045c399e22be2e64b1cd78
+SHA256 (.footprint) = 1b563449ad9877abbc91e798542521841292873f459d4b822598c905307eab70
+SHA256 (libportal-0.9.1.tar.xz) = de801ee349ed3c255a9af3c01b1a401fab5b3fc1c35eb2fd7dfb35d4b8194d7f

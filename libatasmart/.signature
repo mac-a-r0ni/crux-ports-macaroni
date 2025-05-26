@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/macaroni.pub
+RWTGIaBQjhQnA6dT6E8U3fL6uouregtM0y59bUFR8VSiauXESE1PI3aNlNg8ekKnkOJnDOWU8rfGtysNfHQJGscvCFX7G6b63gI=
+SHA256 (Pkgfile) = 82d879b8802ea80b633cb63d048559b7c182fe8007da59ebfc45fb35d37d5dac
+SHA256 (.footprint) = ba7a47c097590b2255e9e72cef422c4e5a4180e34eb0b99f6f8323de4a949502
+SHA256 (libatasmart-0.19.tar.xz) = 61f0ea345f63d28ab2ff0dc352c22271661b66bf09642db3a4049ac9dbdb0f8d

@@ -1,0 +1,125 @@
+# Description: Modular kernel config from Gentoo
+# URL: https://kernel.org
+# Maintainer: mac-a-r0ni, j at lngn dot net
+# Depends on: cpio dracut parallel
+
+name=linux-arm64
+version=6.12.30
+release=1
+source=(https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-$version.tar.xz
+	1500_fortify-copy-size-value-range-tracking-fix.patch
+	1510_fs-enable-link-security-restrictions-by-default.patch
+	1700_sparc-address-warray-bound-warnings.patch
+	1730_parisc-Disable-prctl.patch
+	1740_x86-insn-decoder-test-allow-longer-symbol-names.patch
+	2000_BT-Check-key-sizes-only-if-Secure-Simple-Pairing-enabled.patch
+	2910_bfp-mark-get-entry-ip-as--maybe-unused.patch
+	2920_sign-file-patch-for-libressl.patch
+	2980_kbuild-gcc15-gnu23-to-gnu11-fix.patch
+	2990_libbpf-v2-workaround-Wmaybe-uninitialized-false-pos.patch
+	3000_Support-printing-firmware-info.patch
+	4567_distro-Gentoo-Kconfig.patch
+	5010_enable-cpu-optimizations-universal.patch
+	dotconfig)
+
+PKGMK_NO_STRIP="yes"
+_portdir=$PWD
+
+_disableopt() {
+	sed -i "s/$1=.*/# $1 is not set/" .config
+}
+
+build() {
+	cd linux-$version
+
+	patch -p1 -i $SRC/1500_fortify-copy-size-value-range-tracking-fix.patch
+	patch -p1 -i $SRC/1510_fs-enable-link-security-restrictions-by-default.patch
+	patch -p1 -i $SRC/1700_sparc-address-warray-bound-warnings.patch
+	patch -p1 -i $SRC/1730_parisc-Disable-prctl.patch
+	patch -p1 -i $SRC/1740_x86-insn-decoder-test-allow-longer-symbol-names.patch
+	patch -p1 -i $SRC/2000_BT-Check-key-sizes-only-if-Secure-Simple-Pairing-enabled.patch
+	patch -p1 -i $SRC/2910_bfp-mark-get-entry-ip-as--maybe-unused.patch
+	patch -p1 -i $SRC/2920_sign-file-patch-for-libressl.patch
+	patch -p1 -i $SRC/2980_kbuild-gcc15-gnu23-to-gnu11-fix.patch
+	patch -p1 -i $SRC/2990_libbpf-v2-workaround-Wmaybe-uninitialized-false-pos.patch
+	patch -p1 -i $SRC/3000_Support-printing-firmware-info.patch
+	patch -p1 -i $SRC/4567_distro-Gentoo-Kconfig.patch
+	patch -p1 -i $SRC/5010_enable-cpu-optimizations-universal.patch
+
+	make mrproper
+
+	if [ -f $_portdir/config ]; then
+		cp $_portdir/config .config
+	else
+		cp ../dotconfig .config
+	fi
+
+	make olddefconfig
+
+	sed '/^CONFIG_LOCALVERSION=/d' -i .config
+	echo 'CONFIG_LOCALVERSION="-CRUX"' >> .config
+
+	kernver=${version}$(grep CONFIG_LOCALVERSION= .config | cut -d '"' -f2)
+
+	#make menuconfig
+
+	make Image modules dtbs
+	make INSTALL_MOD_STRIP=$STRIP_DEBUG INSTALL_MOD_PATH=$PKG modules_install
+
+	echo "Compress kernel modules for package"
+	pushd $PKG
+	find ./lib/modules -type f -name "*.ko" | parallel xz --threads=0 -ze9f -C crc32
+	for i in $(find ./lib/modules -type l -name "*.ko") ; do ln -vfs $( readlink $i ).xz $i.xz ; rm -fv $i ; done
+	popd
+
+	mkdir -p $PKG/boot/dtb
+
+	cp  arch/arm64/boot/Image $PKG/boot/vmlinuz
+	make INSTALL_DTBS_PATH=$PKG/boot/dtb dtbs_install
+
+	make clean
+	make prepare
+
+	rm -rf $PKG/lib/firmware
+
+	for file in $(ls arch); do
+		case $file in
+			arm64|Kconfig) continue ;;
+			*) rm -fr arch/$file ;;
+		esac
+	done
+
+	# strip down sources
+	# don't package the kernel in the sources directory
+	find . -name "*Image" -exec rm "{}" \;
+	find . -name "*.cmd" -exec rm -f "{}" \;
+	rm -f .*.d
+
+	rm -fr firmware ipc .config.old .version .cocciconfig \
+		.get_maintainer.ignore .gitattributes .gitignore .mailmap \
+		COPYING CREDITS MAINTAINERS README Documentation
+	find . -name ".gitignore" -exec rm "{}" \;
+	for dir in block certs crypto drivers fs init kernel lib mm net samples security sound usr virt; do
+		find $dir -type f \( -name "*.c" -o -name "*.h" \) -exec rm "{}" \;
+	done
+	for i in $(ls tools); do
+		[ "$i" = "objtool" ] || rm -fr tools/$i
+	done
+	for i in $(ls tools/objtool); do
+		[ "$i" = "objtool" ] || rm -fr tools/objtool/$i
+	done
+
+	rm $PKG/lib/modules/$kernver/build
+#	rm $PKG/lib/modules/$kernver/source
+#	mv $SRC/linux-$version $PKG/lib/modules/$kernver/build
+#	ln -sv build $PKG/lib/modules/$kernver/source
+
+	# remove now broken symlinks
+#	find -L $PKG/lib/modules/$kernver/build -type l -exec rm -f "{}" \;
+
+	# remove junk
+	find $PKG -name "README*" -delete
+	find $PKG -name "TODO*" -delete
+	find $PKG -name "BUGS*" -delete
+	find $PKG -name "ChangeLog" -delete
+}
