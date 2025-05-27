@@ -17,6 +17,7 @@ drwxr-xr-x	root/root	usr/lib/firefox/browser/chrome/icons/default/
 -rw-r--r--	root/root	usr/lib/firefox/browser/chrome/icons/default/default48.png
 -rw-r--r--	root/root	usr/lib/firefox/browser/chrome/icons/default/default64.png
 -rw-r--r--	root/root	usr/lib/firefox/browser/omni.ja
+-rwxr-xr-x	root/root	usr/lib/firefox/crashhelper
 -rwxr-xr-x	root/root	usr/lib/firefox/crashreporter
 drwxr-xr-x	root/root	usr/lib/firefox/defaults/
 drwxr-xr-x	root/root	usr/lib/firefox/defaults/pref/

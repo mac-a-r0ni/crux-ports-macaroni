@@ -1,0 +1,24 @@
+# Description: Generates status bar to use with i3bar, dzen2 or xmobar
+# URL: https://i3wm.org/i3status/
+# Maintainer: Jay Lanagan, j at lngn dot net
+# Depends on: alsa-lib confuse libnl yajl asciidoc xmlto
+
+name=i3status
+version=2.15
+release=1
+source=(https://i3wm.org/$name/$name-$version.tar.xz)
+
+build() {
+
+    meson setup $name-$version build \
+     --prefix=/usr \
+     --buildtype=plain \
+     -Ddocs=false \
+     -Dmans=true \
+     -Dpulseaudio=true
+
+    meson compile -C build
+
+    meson install -C build --destdir $PKG
+
+}

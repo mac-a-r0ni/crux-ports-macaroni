@@ -1,0 +1,73 @@
+# Description: proprietary broadcom-wl kernel wifi driver
+# URL: https://broadcom.com
+# Maintainer: Jay Lanagan, j at lngn dot net
+# Depends on:
+
+name=broadcom-wl
+kernel=${kernel:-$( uname -r )}
+version=6.30.223.271
+release=1
+ifname=${ifname:-wlan}
+source=(https://docs.broadcom.com/docs-and-downloads/docs/linux_sta/hybrid-v35_64-nodebug-pcoem-6_30_223_271.tar.gz
+	000-remove-time_date-macros.patch
+	001-null-pointer-fix.patch
+	002-rdtscl.patch
+	003-linux47.patch
+	004-linux48.patch
+	005-debian-fix-kernel-warnings.patch
+	006-linux411.patch
+	007-linux412.patch
+	008-linux415.patch
+	009-fix_mac_profile_discrepancy.patch
+	010-linux56.patch
+	011-linux59.patch
+	012-linux517.patch
+	013-linux518.patch
+	014-linux414.patch
+	015-linux600.patch
+	016-linux601.patch
+	017-linux612.patch
+	018-linux613.patch
+	019-linux614.patch
+	b43_blacklist.conf)
+
+build() {
+
+if [ "$ifname" != "eth" ]; then
+  sed -i "/BRCM_WLAN_IFNAME/s/eth/$ifname/" src/wl/sys/wl_linux.c
+fi
+
+patch -p2 < $SRC/000-remove-time_date-macros.patch || exit 1
+patch -p1 < $SRC/001-null-pointer-fix.patch || exit 1
+patch -p1 < $SRC/002-rdtscl.patch || exit 1
+patch -p1 < $SRC/003-linux47.patch || exit 1
+patch -p1 < $SRC/004-linux48.patch || exit 1
+patch -p1 < $SRC/005-debian-fix-kernel-warnings.patch || exit 1
+patch -p1 < $SRC/006-linux411.patch || exit 1
+patch -p1 < $SRC/007-linux412.patch || exit 1
+patch -p1 < $SRC/008-linux415.patch || exit 1
+patch -p1 < $SRC/009-fix_mac_profile_discrepancy.patch || exit 1
+patch -p1 < $SRC/010-linux56.patch || exit 1
+patch -p1 < $SRC/011-linux59.patch || exit 1
+patch -p1 < $SRC/012-linux517.patch || exit 1
+patch -p1 < $SRC/013-linux518.patch || exit 1
+patch -p1 < $SRC/014-linux414.patch || exit 1
+patch -p1 < $SRC/015-linux600.patch || exit 1
+patch -p1 < $SRC/016-linux601.patch || exit 1
+patch -p1 < $SRC/017-linux612.patch || exit 1
+patch -p1 < $SRC/018-linux613.patch || exit 1
+patch -p1 < $SRC/019-linux614.patch || exit 1
+
+# See https://lkml.org/lkml/2019/3/1/643
+sed -i 's/get_ds()/KERNEL_DS/g' src/wl/sys/wl_iw.c
+sed -i 's/get_ds()/KERNEL_DS/g' src/wl/sys/wl_cfg80211_hybrid.c
+
+env -u ARCH make -C /lib/modules/$kernel/build M=$(pwd) clean
+env -u ARCH make -C /lib/modules/$kernel/build M=$(pwd)
+
+mkdir -p $PKG/lib/modules/$kernel/kernel/extra
+cp wl.ko $PKG/lib/modules/$kernel/kernel/extra
+
+mkdir -p $PKG/etc/modprobe.d
+cat $SRC/b43_blacklist.conf > $PKG/etc/modprobe.d/b43_blacklist.conf
+}

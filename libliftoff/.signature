@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/macaroni.pub
+RWTGIaBQjhQnA5jYdP6JQiKDo48HEVltbjlwcMoa/cgkNFCS1sBBLtknh0gFsIqDLGOd5vmzXBBKnlmJI9kgqmkxEpmcjb1IfAM=
+SHA256 (Pkgfile) = ad41693524d89e6ad5dcb5c5c5d72a023d21e009169cd1934c796d49e1d11e5a
+SHA256 (.footprint) = e4251c834c9de8629e96cab45a104b8b9bae389bb25e6e40f5c50a3b363710c0
+SHA256 (libliftoff-v0.5.0.tar.bz2) = 2ed21be3c563b129bd8f188195a23256017e15908c195f3edcd3697584caf1c8

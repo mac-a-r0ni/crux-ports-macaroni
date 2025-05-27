@@ -1,0 +1,23 @@
+# Description: Clean and customizable greeter for greetd
+# URL: https://github.com/rharish101/ReGreet/
+# Maintainer: Jay Lanagan, j at lngn dot net
+# Depends on: greetd rust gtk4 sway gdk-pixbuf glib pango
+# Optional:
+
+name=regreet
+version=0.2.0
+release=1
+source=(https://github.com/rharish101/ReGreet/archive/$version/$name-$version.tar.gz)
+
+build() {
+
+  prt-get isinst sccache && export RUSTC_WRAPPER=/usr/bin/sccache
+  mkdir "$PKGMK_SOURCE_DIR/rust" || true
+  export CARGO_HOME="$PKGMK_SOURCE_DIR/rust"
+
+  cargo build --manifest-path ReGreet-$version/Cargo.toml --release --all-features
+
+  install -Dm755 -t $PKG/usr/bin ReGreet-$version/target/release/$name
+  install -Dm644 -t $PKG/etc/greetd ReGreet-$version/regreet.sample.toml
+
+}

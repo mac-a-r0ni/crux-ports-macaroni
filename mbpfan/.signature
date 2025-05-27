@@ -1,0 +1,6 @@
+untrusted comment: verify with /etc/ports/macaroni.pub
+RWTGIaBQjhQnA9Koc5oxRytyuTYsx+XN7SrogYkTJI3wIonI9jsHwIG82FIZplNjX39+lxRUk5NpGU8u6mEaIGClU5BFfZotFQI=
+SHA256 (Pkgfile) = 08f782d8353deee045f47056302a1ff93fa1cc8ad9367804523affe3ee4ae77b
+SHA256 (.footprint) = 5a5f4ecf0ea4406c0d0557996125067f662debf270e7f912a8acaf84195eeb81
+SHA256 (mbpfan-2.4.0.tar.gz) = e1cdcffaba52be215ae40a8568949190866d500d6ae2a1e96b71ab5372f3580b
+SHA256 (mbpfan.rc) = ffdcc4dfb722b616fe5a6c5ed19cdda8427b99b083f1186ef6eafb0e07f24d55

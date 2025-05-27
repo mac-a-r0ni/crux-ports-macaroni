@@ -1,7 +1,7 @@
 untrusted comment: verify with /etc/ports/macaroni.pub
-RWTGIaBQjhQnA+6RlFmFLvb629O8sE8iVX1L+xMKpWVU2yBdnCK1cxRvlAIrZjv1df2yHucqkWtodJ3k/6mPxSYhcbg23eEXCAA=
-SHA256 (Pkgfile) = 34b8ccbd97278530dfa7690e0e6a318be7f6122ca7f6d5a5b79ba1d47879823e
-SHA256 (.footprint) = 0d4e2c8c4a62d77ac032b8bf5c917d9071873681ede14788fd181ea2eb4d17fd
-SHA256 (firefox-138.0.4.tar.xz) = 6e078b2b61965b8b5525ae0da3216f7fc6a0460d4e0870e09addcb5a93a60a90
+RWTGIaBQjhQnA4BwDFSRQ26kftpsJUUobEomxisxLte6GheJBEnDpOJDJLmbLzj01tt0gLC2bgYTDMNXrsBLVSlqUW3pkdEUQg0=
+SHA256 (Pkgfile) = b5afeac2a233f02dfb4676434063335382ddaadfe44dcb9877a3645718ec02bc
+SHA256 (.footprint) = cce859da4bdc0dce13313857c2e556c74f9b747b351fbc470ae0803628f41b02
+SHA256 (firefox-139.0.tar.xz) = bd9b0a7a0f0faa47cb053f7df0c2c38766d7e481d697f6cfa60c01425eb81786
 SHA256 (policies.json) = cf856011307f7831d74cdacb4e80b6dceaa49882b8dcba008d527a78764903f4
 SHA256 (firefox.desktop) = 05bd1a4e283bc68f525f87cabf35ad0a59e5e63e107ce3901a4ac73e3d16ef33

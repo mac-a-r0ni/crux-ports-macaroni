@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/macaroni.pub
+RWTGIaBQjhQnA0M9wsp/a7t/nORGnf981h52TTA0F3EnC6Dasx4f0X4vEbzwz0S+e2VLKfinzEwXDpveI3Gu8fD/4Qk+hVMi9Qs=
+SHA256 (Pkgfile) = c53922510548df3562f324d703914e747ba81d3eb96c9fe89f3ad5f7748834e4
+SHA256 (.footprint) = dba05fc17acfaceb15cb7f63a4b1f9c0aa00de59f63c541766b3da90f9fc340c
+SHA256 (regreet-0.2.0.tar.gz) = 6ce1f948feb75e12436eccc41557ad6a7127672f0658a9c9fbd5a412cebafc8a

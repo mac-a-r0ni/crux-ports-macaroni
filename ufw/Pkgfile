@@ -1,0 +1,23 @@
+# Description: Uncomplicated Firewall
+# URL: https://launchpad.net/ufw
+# Maintainer: Jay Lanagan, j at lngn dot net
+# Depends on:
+
+name=ufw
+version=0.36.2
+release=1
+source=(https://launchpad.net/ufw/0.36/$version/+download/$name-$version.tar.gz)
+
+build() {
+    cd $name-$version
+
+python3 setup.py install --root=$PKG
+
+# install init script
+mkdir -p $PKG/etc/rc.d
+cp $SRC/$name-$version/doc/initscript.example $PKG/etc/rc.d/ufw
+chmod 0755 $PKG/etc/rc.d/ufw
+
+rm -rf $PKG/usr/share/ufw/messages
+
+}
