@@ -1,7 +1,7 @@
 # Description: Compare files, directories and working copies
 # URL: https://meldmerge.org
 # Maintainer: Jay Lanagan, j at lngn dot net
-# Depends on: dconf gdk-pixbuf glib gsettings-desktop-schemas gtk3 gtksourceview4 hicolor-icon-theme pango python3-cairo python3-gobject
+# Depends on: dconf gsettings-desktop-schemas gtksourceview4 hicolor-icon-theme python3-gobject
 
 name=meld
 version=3.23.0
