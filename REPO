@@ -8,6 +8,7 @@ d:mesa
 d:ftjam
 d:gawk
 d:fuzzel
+d:meld
 d:niri
 d:python3-mako
 d:libatasmart
@@ -65,6 +66,10 @@ f:611bae70510b486ff4449c3db02ab246:gawk/.footprint
 f:058152981509dbd8f574388595d21ac4:fuzzel/.signature
 f:9f30ad67549577db2fc39bd496ac62e4:fuzzel/Pkgfile
 f:d877ba1d9379d056095a11e1ac1585e8:fuzzel/.footprint
+f:2a984db2aa6782d7ca8e9286a24ba772:meld/post-install
+f:cfc2baa2a4b568f098849833c1a14aa5:meld/.signature
+f:85b9789bd8a36cab2c7450cd581f9c36:meld/Pkgfile
+f:90779ca8ad7602d6fa11a4b6ea14efe2:meld/.footprint
 f:4229838416e8159f00bb9f5248c9f3c9:niri/.signature
 f:842ff7e9af7276cd514db0c5b44268fd:niri/niri.desktop
 f:e73a343622e671e448e916e06d7bdd31:niri/Pkgfile
