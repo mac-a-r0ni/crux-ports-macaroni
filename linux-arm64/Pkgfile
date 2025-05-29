@@ -5,7 +5,7 @@
 
 name=linux-arm64
 version=6.12.30
-release=1
+release=2
 source=(https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-$version.tar.xz
 	1500_fortify-copy-size-value-range-tracking-fix.patch
 	1510_fs-enable-link-security-restrictions-by-default.patch

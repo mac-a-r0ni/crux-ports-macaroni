@@ -1,6 +1,6 @@
 untrusted comment: verify with /etc/ports/macaroni.pub
-RWTGIaBQjhQnA4vH2Mky+XpF6gu4w4Ev2+GeZjq84wCEwAwXIZji0VmQnJdlamrtz8ZEmr41MDw3UFOpRLOKUMaurSoj3gV+iA8=
-SHA256 (Pkgfile) = 4743a6721af325e48e2bb0e79cc48d3f1d0480177786e54802ba6e90e5fc1e2c
+RWTGIaBQjhQnA86LeOSWBDBy1HY4+ZjQ30R9MQ3EjKVrHex8lWaXvcsAcEi7jRyyD6gjo7hRLtOK1l3BPbPK2uT5VBkcU515Igc=
+SHA256 (Pkgfile) = 868f41ef6fa1876b0d5805e17508fa81e54959d0a2e4b13e6ce576844afc2f79
 SHA256 (.footprint) = 161d4ec37fb4082b01cf58208be854c2469e53f98bfcf8f1338e07afd7ce3df5
 SHA256 (linux-6.12.30.tar.xz) = df046a48971e40ce0b2e003e7e55b6b1e7da2912120eb216d5d6c8450c9cf82e
 SHA256 (1500_fortify-copy-size-value-range-tracking-fix.patch) = 8930d3713ebfd0543fdf222b70c5e4197cf5d23380203feb9550feec51dbc2a2
@@ -14,6 +14,6 @@ SHA256 (2920_sign-file-patch-for-libressl.patch) = be6aaad836d9140f9d75ead2c0273
 SHA256 (2980_kbuild-gcc15-gnu23-to-gnu11-fix.patch) = 55d6b1c89c1e8c0125976612731951253e0f6f79c1e6dcc65891981602f76505
 SHA256 (2990_libbpf-v2-workaround-Wmaybe-uninitialized-false-pos.patch) = a08fa9d2e7a943399fec7fb08eead6308bb51642c4592a9f57d1b79b06d5495c
 SHA256 (3000_Support-printing-firmware-info.patch) = 4bbf1106fe1203c3bdc41bc1aae4180710217a3a612e1648b8d78020f6cc285a
-SHA256 (4567_distro-Gentoo-Kconfig.patch) = 594336bb580b75c2e630ddbc49305136c85e7d924562ce5ff5303b2ca80f7d00
+SHA256 (4567_distro-Gentoo-Kconfig.patch) = 73a07008888002e06a421dfc89a3ec9a1a419062a37bdc3ded34ee60805c9552
 SHA256 (5010_enable-cpu-optimizations-universal.patch) = 6f9981c87fbc2789dcfb1afddd6470c290a706a5c749af00253605b11cf993e6
 SHA256 (dotconfig) = 95b656d5ff8eee3da4da4c04a534021e9a35fb89744fa90e8c5d4217f493e30e
