@@ -28,8 +28,8 @@ d:libtheora
 f:94ba4bbf8cb1f9496fb705e126b170b7:wlr-randr/.signature
 f:5ce3fdc152c818d5bbf7b51709574826:wlr-randr/Pkgfile
 f:1b99efa932dcc867f81d36913ec1a7c3:wlr-randr/.footprint
-f:6d1b04a1c1234b06ef52d63725759925:firefox-bin/.signature
-f:98b2a63974f3fe877062e6498e43dcc6:firefox-bin/Pkgfile
+f:a3fd8658b38d9019c905a85be4106238:firefox-bin/.signature
+f:702686b7c754b03678993cda2dcb9f76:firefox-bin/Pkgfile
 f:6969317bef20e11e44e2a628f855c03a:firefox-bin/.footprint
 f:a562967c078701d405eff29b0ae220b6:firefox-bin/policies.json
 f:48c4e73fdcf740a9e455e42f61fc75d1:firefox-bin/firefox.desktop
@@ -43,13 +43,13 @@ f:542d4e7a518832fa41836619dd6b62f6:linux-arm64/2920_sign-file-patch-for-libressl
 f:9b8b4fadce2eef54be9b3ff77872346b:linux-arm64/post-install
 f:07dc84d0d02b34ea80a1efcde0796e8d:linux-arm64/2910_bfp-mark-get-entry-ip-as--maybe-unused.patch
 f:98a1bd3283675645194e0dade206b07b:linux-arm64/2000_BT-Check-key-sizes-only-if-Secure-Simple-Pairing-enabled.patch
-f:8f1865d41aeb338bb53f0963d7a9aafb:linux-arm64/.signature
+f:c28e1feeb86203c6451343080f246619:linux-arm64/.signature
 f:59b66fae6452a9b89f6384883467fd7b:linux-arm64/dotconfig
 f:a552cf699cfe06fe56631de991a90863:linux-arm64/1700_sparc-address-warray-bound-warnings.patch
 f:e83ec342c07f2d28365d19ea41d3d845:linux-arm64/3000_Support-printing-firmware-info.patch
 f:caf9e5d8da2c92552c5f9d7360cf08fa:linux-arm64/1500_fortify-copy-size-value-range-tracking-fix.patch
 f:93575e216c3852c1a4b6c39a23197430:linux-arm64/Pkgfile
-f:f71120da6e722c3d530ca5f6de19df68:linux-arm64/.footprint
+f:161600b2f8cf928dd6b2d7c3ac0bc6b6:linux-arm64/.footprint
 f:7079a75da4ddcdc7b7d1756370b455df:linux-arm64/2980_kbuild-gcc15-gnu23-to-gnu11-fix.patch
 f:c6ded9c6f280dbd98580bf341cee4131:linux-arm64/1510_fs-enable-link-security-restrictions-by-default.patch
 f:e3b96526057307d88af672c195891470:linux-arm64/2990_libbpf-v2-workaround-Wmaybe-uninitialized-false-pos.patch
