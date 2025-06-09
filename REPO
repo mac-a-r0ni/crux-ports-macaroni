@@ -6,7 +6,6 @@ d:python3-gobject
 d:libscfg
 d:kanshi
 d:i3status
-d:mesa
 d:ftjam
 d:gawk
 d:fuzzel
@@ -40,15 +39,15 @@ f:134298e783cc92d35b99ff80d00848df:linux-arm64/1730_parisc-Disable-prctl.patch
 f:3a22559d3f994690bc47b24032648e42:linux-arm64/4567_distro-Gentoo-Kconfig.patch
 f:65b49ebccd194634f154f89549ca0e3f:linux-arm64/1740_x86-insn-decoder-test-allow-longer-symbol-names.patch
 f:542d4e7a518832fa41836619dd6b62f6:linux-arm64/2920_sign-file-patch-for-libressl.patch
-f:9b8b4fadce2eef54be9b3ff77872346b:linux-arm64/post-install
+f:94bebd8d33021f6b4238ab86645220f6:linux-arm64/post-install
 f:07dc84d0d02b34ea80a1efcde0796e8d:linux-arm64/2910_bfp-mark-get-entry-ip-as--maybe-unused.patch
 f:98a1bd3283675645194e0dade206b07b:linux-arm64/2000_BT-Check-key-sizes-only-if-Secure-Simple-Pairing-enabled.patch
-f:c28e1feeb86203c6451343080f246619:linux-arm64/.signature
+f:f6516956b9a426b6278fc04397fcbb57:linux-arm64/.signature
 f:59b66fae6452a9b89f6384883467fd7b:linux-arm64/dotconfig
 f:a552cf699cfe06fe56631de991a90863:linux-arm64/1700_sparc-address-warray-bound-warnings.patch
 f:e83ec342c07f2d28365d19ea41d3d845:linux-arm64/3000_Support-printing-firmware-info.patch
 f:caf9e5d8da2c92552c5f9d7360cf08fa:linux-arm64/1500_fortify-copy-size-value-range-tracking-fix.patch
-f:93575e216c3852c1a4b6c39a23197430:linux-arm64/Pkgfile
+f:525dd753ed4b165e1dfdfb70b94a2966:linux-arm64/Pkgfile
 f:161600b2f8cf928dd6b2d7c3ac0bc6b6:linux-arm64/.footprint
 f:7079a75da4ddcdc7b7d1756370b455df:linux-arm64/2980_kbuild-gcc15-gnu23-to-gnu11-fix.patch
 f:c6ded9c6f280dbd98580bf341cee4131:linux-arm64/1510_fs-enable-link-security-restrictions-by-default.patch
@@ -66,9 +65,6 @@ f:5381e2b3d0f98c7e65fb4034450011d0:kanshi/.footprint
 f:d3670ce511993d07d15b3a5d927fccc7:i3status/.signature
 f:fe7a2d0424ee62239c9b73a8fe8c09a7:i3status/Pkgfile
 f:6532782ee581f65e9ff9d9320e0edc58:i3status/.footprint
-f:d630f4381cc9f1a6978bb1a79b4ac20b:mesa/.signature
-f:6a65068727cc0b0f22ac0aa384d32529:mesa/Pkgfile
-f:55f8a7654c186b1575ab291460c77be3:mesa/.footprint
 f:b71bd2cb0fd6a46cb08e8d3cc4c461a6:ftjam/.signature
 f:fda40473fdc9e4abee83162d7735077a:ftjam/Pkgfile
 f:005367b7218451a63f2932c90a922c16:ftjam/ftjam-2.5.3-clang16.patch
