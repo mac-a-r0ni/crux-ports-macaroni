@@ -1,5 +1,4 @@
 d:wlr-randr
-d:firefox-bin
 d:regreet
 d:linux-arm64
 d:python3-gobject
@@ -27,11 +26,6 @@ d:libtheora
 f:94ba4bbf8cb1f9496fb705e126b170b7:wlr-randr/.signature
 f:5ce3fdc152c818d5bbf7b51709574826:wlr-randr/Pkgfile
 f:1b99efa932dcc867f81d36913ec1a7c3:wlr-randr/.footprint
-f:a3fd8658b38d9019c905a85be4106238:firefox-bin/.signature
-f:702686b7c754b03678993cda2dcb9f76:firefox-bin/Pkgfile
-f:6969317bef20e11e44e2a628f855c03a:firefox-bin/.footprint
-f:a562967c078701d405eff29b0ae220b6:firefox-bin/policies.json
-f:48c4e73fdcf740a9e455e42f61fc75d1:firefox-bin/firefox.desktop
 f:66140391b8dd4f500abc0d7f012bf6b9:regreet/.signature
 f:17736a42be43c0a5382945a8a2df6afe:regreet/Pkgfile
 f:47173e0e18251d976314580c8d4d52cd:regreet/.footprint
