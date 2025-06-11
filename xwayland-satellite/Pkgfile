@@ -4,7 +4,7 @@
 # Depends on: clang rust xorg-xwayland xorg-libxcb xorg-xcb-util-cursor
 
 name=xwayland-satellite
-version=0.5.1
+version=0.6
 release=1
 source=(https://github.com/Supreeeme/$name/archive/v${version}/$name-$version.tar.gz)
 

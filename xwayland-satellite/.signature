@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/macaroni.pub
-RWTGIaBQjhQnAxEWHfJ1ExmhR0tTBpQlFo18PV4G/kacKKrsZZsWDpw5MmRgxXlOP9QqUlnmz8xsDjcMoXzvtDP9e7GUY1v/3gg=
-SHA256 (Pkgfile) = 53e1eda90398ac96664407c6baecad344a93933fe2438e8d7854be14932a9200
+RWTGIaBQjhQnA0/MkhpV5N0zqJe5oCTCr7OgH7u5ILsxWDu8y498Zgz/E2uZvjEXn1hq7ZsRRkZwdoAJ8JRM4GAYnn/+pg3CwAc=
+SHA256 (Pkgfile) = 5a833ffc6b72e99626c9a6c21d9662f206f405d60f6e064edc8c341b8dd7dbe2
 SHA256 (.footprint) = d46f30d3d7cb30d7140405a6adff736e5a8786e9cc04b7d8a4e3aa5fa8f09f4f
-SHA256 (xwayland-satellite-0.5.1.tar.gz) = 107d4a8004b24a871c6548a7c550e9260fcbb0367bd6337ae98f1fd2f3ecf645
+SHA256 (xwayland-satellite-0.6.tar.gz) = 81d23bf4b75e841f14039efc0b2b1a0ffa81ed6715ca21339d63423e056ccb25
