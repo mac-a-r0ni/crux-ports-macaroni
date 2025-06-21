@@ -1,8 +1,8 @@
 untrusted comment: verify with /etc/ports/macaroni.pub
-RWTGIaBQjhQnA6Kb+MEFtHgeUqkqztGHqGRkl54UX0TJyJp+MC5VUxmEjHyqV0TJ9AklKg7lqu4si+J0MDZbuntdwmKzlmsmKgk=
-SHA256 (Pkgfile) = 8dc35cefd0c60bd4d8d713b6678c1fe2deb4887cabe15934cb8be6c4c9dc2f84
+RWTGIaBQjhQnA+NgiJXJ7rHNf0j/LjmknmyPZTejlFUiHRhd7xrRO2ag075vdrTwZ9gZz8tVVEno/lYgO1X5cRdPfa40gaYFXAM=
+SHA256 (Pkgfile) = 49019f3bf5c7466abc3dd176e23695b672073ad8cb5541787e470283e775b801
 SHA256 (.footprint) = 161d4ec37fb4082b01cf58208be854c2469e53f98bfcf8f1338e07afd7ce3df5
-SHA256 (linux-6.12.33.tar.xz) = c0a575630f2603a20bb0641f8df8f955e46c9d7ac1fae8b54b21316e6b52a254
+SHA256 (linux-6.12.34.tar.xz) = a7f3fe381f67eca4172e9b63efb61a14bd7f9e1278e03603d0ff5a93f270c24d
 SHA256 (1500_fortify-copy-size-value-range-tracking-fix.patch) = 8930d3713ebfd0543fdf222b70c5e4197cf5d23380203feb9550feec51dbc2a2
 SHA256 (1510_fs-enable-link-security-restrictions-by-default.patch) = 4603d7dc6ad5c007218fb7d2cc46196dd95a9cd46e782c90e9af4ba2310de703
 SHA256 (1700_sparc-address-warray-bound-warnings.patch) = f4a85622c55fb565d8796c388229103fdf966f508fe055a019ad1a649b09a78a

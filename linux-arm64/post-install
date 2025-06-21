@@ -1,6 +1,6 @@
 #!/bin/sh
 
-version=6.12.33
+version=6.12.34
 
 if [ $(command -v dracut) ]; then
 	echo "dracut: generating initramfs for kernel $version..."
