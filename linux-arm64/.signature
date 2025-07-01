@@ -1,13 +1,12 @@
 untrusted comment: verify with /etc/ports/macaroni.pub
-RWTGIaBQjhQnA+NgiJXJ7rHNf0j/LjmknmyPZTejlFUiHRhd7xrRO2ag075vdrTwZ9gZz8tVVEno/lYgO1X5cRdPfa40gaYFXAM=
-SHA256 (Pkgfile) = 49019f3bf5c7466abc3dd176e23695b672073ad8cb5541787e470283e775b801
-SHA256 (.footprint) = 161d4ec37fb4082b01cf58208be854c2469e53f98bfcf8f1338e07afd7ce3df5
-SHA256 (linux-6.12.34.tar.xz) = a7f3fe381f67eca4172e9b63efb61a14bd7f9e1278e03603d0ff5a93f270c24d
+RWTGIaBQjhQnA5ABRsdFkSLT1ngSeH1UNvv2q4tgXzLWK4f3F+Hn0ZIBw7PcqlW0RsFeNqCBFaCIZNXn1MBlRrQRcsvOb79RCQg=
+SHA256 (Pkgfile) = 7b718a3ea072339f55e06d24fcc452b379c0680ec17901e48a8d51b1e96fce74
+SHA256 (.footprint) = 5afa8174cf2c2353bc5f2dbcf62fd12c680558a8d280df634c8ca06355251a03
+SHA256 (linux-6.12.35.tar.xz) = 05f4e0b01dde578c3328eb539d305cccec7b84e939f6dd5f21fdaf5f313da748
 SHA256 (1500_fortify-copy-size-value-range-tracking-fix.patch) = 8930d3713ebfd0543fdf222b70c5e4197cf5d23380203feb9550feec51dbc2a2
 SHA256 (1510_fs-enable-link-security-restrictions-by-default.patch) = 4603d7dc6ad5c007218fb7d2cc46196dd95a9cd46e782c90e9af4ba2310de703
 SHA256 (1700_sparc-address-warray-bound-warnings.patch) = f4a85622c55fb565d8796c388229103fdf966f508fe055a019ad1a649b09a78a
 SHA256 (1730_parisc-Disable-prctl.patch) = 5bc1c52b696c1c1c349bd2139a881cb7966140614527dea3af9c28fd1dd85a80
-SHA256 (1740_x86-insn-decoder-test-allow-longer-symbol-names.patch) = c95899550e3262bb07a5a697a15e50f3394ae020cfd6b97ae72e8a87a9af9850
 SHA256 (2000_BT-Check-key-sizes-only-if-Secure-Simple-Pairing-enabled.patch) = 882156f8dfb21b5b1a85e9aaa48280540b4d1348f1bde0c358b47678aea9065a
 SHA256 (2910_bfp-mark-get-entry-ip-as--maybe-unused.patch) = 62a16f7d355343aec265a0485dc753370f1c9110f100dde0ec4f278f9b7df25a
 SHA256 (2920_sign-file-patch-for-libressl.patch) = be6aaad836d9140f9d75ead2c0273032fa22d9a40489f212fb4701e93c2648fd

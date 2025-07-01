@@ -4,14 +4,13 @@
 # Depends on: cpio dracut parallel
 
 name=linux-arm64
-version=6.12.34
+version=6.12.35
 release=1
 source=(https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-$version.tar.xz
 	1500_fortify-copy-size-value-range-tracking-fix.patch
 	1510_fs-enable-link-security-restrictions-by-default.patch
 	1700_sparc-address-warray-bound-warnings.patch
 	1730_parisc-Disable-prctl.patch
-	1740_x86-insn-decoder-test-allow-longer-symbol-names.patch
 	2000_BT-Check-key-sizes-only-if-Secure-Simple-Pairing-enabled.patch
 	2910_bfp-mark-get-entry-ip-as--maybe-unused.patch
 	2920_sign-file-patch-for-libressl.patch
@@ -36,7 +35,6 @@ build() {
 	patch -p1 -i $SRC/1510_fs-enable-link-security-restrictions-by-default.patch
 	patch -p1 -i $SRC/1700_sparc-address-warray-bound-warnings.patch
 	patch -p1 -i $SRC/1730_parisc-Disable-prctl.patch
-	patch -p1 -i $SRC/1740_x86-insn-decoder-test-allow-longer-symbol-names.patch
 	patch -p1 -i $SRC/2000_BT-Check-key-sizes-only-if-Secure-Simple-Pairing-enabled.patch
 	patch -p1 -i $SRC/2910_bfp-mark-get-entry-ip-as--maybe-unused.patch
 	patch -p1 -i $SRC/2920_sign-file-patch-for-libressl.patch
