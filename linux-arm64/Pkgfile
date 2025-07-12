@@ -4,7 +4,7 @@
 # Depends on: cpio dracut parallel
 
 name=linux-arm64
-version=6.12.36
+version=6.12.37
 release=1
 source=(https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-$version.tar.xz
 	1500_fortify-copy-size-value-range-tracking-fix.patch
