@@ -1,8 +1,8 @@
 # Description: Clean and customizable greeter for greetd
 # URL: https://github.com/rharish101/ReGreet/
 # Maintainer: Jay Lanagan, j at lngn dot net
-# Depends on: greetd rust gtk4 sway gdk-pixbuf glib pango
-# Optional:
+# Depends on: greetd rust gtk4 gdk-pixbuf glib pango
+# Optional: sway
 
 name=regreet
 version=0.2.0
