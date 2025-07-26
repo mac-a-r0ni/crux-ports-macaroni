@@ -1,6 +1,6 @@
 #!/bin/sh
 
-version=6.12.39
+version=6.12.40
 
 depmod ${version}-CRUX
 
