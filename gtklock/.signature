@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/macaroni.pub
+RWTGIaBQjhQnA1xaiOOdGu4exOeN4Ykzfju9fwPk8ljGefHaw1ymV57g3Bga8RCln6ywQt2uxOCTyhrcqCIE3heF7u9vsYXtHgk=
+SHA256 (Pkgfile) = 2a8658b2cd48db8757f10e90a2bf80240b2ffc017da3950f99b2ba5ffb05da10
+SHA256 (.footprint) = e42c4ebb7e35f32f55d1753d63df3aea8f795de5dc51a8de9aa7b33f3e7a031f
+SHA256 (gtklock-4.0.0.tar.gz) = db20bf27bd5dd01901ea1753c89c170777dd7cf8fca19130cf90f5f4e3fb9633

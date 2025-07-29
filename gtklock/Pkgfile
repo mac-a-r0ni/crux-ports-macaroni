@@ -1,0 +1,23 @@
+# Description: GTK-based lockscreen for Wayland
+# URL: https://github.com/jovanlanik/gtklock
+# Maintainer: Jay Lanagan, j at lngn dot net
+# Depends on: linux-pam wayland gtk3 gtk-layer-shell scdoc gtk-session-lock
+
+name=gtklock
+version=4.0.0
+release=1
+source=(https://github.com/jovanlanik/gtklock/archive/v${version}/$name-$version.tar.gz)
+
+build() {
+
+  meson setup $name-$version build \
+    --prefix=/usr \
+    --buildtype=plain \
+    -D b_lto=true \
+    -D b_pie=true
+
+  meson compile -C build
+  meson install -C build --destdir $PKG
+
+  rm -rf $PKG/usr/share/locale
+}
