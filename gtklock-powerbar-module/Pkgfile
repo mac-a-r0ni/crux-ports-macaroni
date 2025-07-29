@@ -1,0 +1,22 @@
+# Description: GTK-based lockscreen for Wayland power status module
+# URL: https://github.com/jovanlanik/gtklock-powerbar-module
+# Maintainer: Jay Lanagan, j at lngn dot net
+# Depends on: gtklock
+
+name=gtklock-powerbar-module
+version=4.0.0
+release=1
+source=(https://github.com/jovanlanik/$name/archive/refs/tags/v${version}.tar.gz)
+
+build() {
+
+  meson setup $name-$version build \
+    --prefix=/usr \
+    --buildtype=plain \
+    -D b_lto=true \
+    -D b_pie=true
+
+  meson compile -C build
+  meson install -C build --destdir $PKG
+
+}

@@ -6,6 +6,7 @@ d:libscfg
 d:kanshi
 d:i3status
 d:ftjam
+d:gtklock-powerbar-module
 d:gtklock
 d:gawk
 d:fuzzel
@@ -64,6 +65,9 @@ f:b71bd2cb0fd6a46cb08e8d3cc4c461a6:ftjam/.signature
 f:fda40473fdc9e4abee83162d7735077a:ftjam/Pkgfile
 f:005367b7218451a63f2932c90a922c16:ftjam/ftjam-2.5.3-clang16.patch
 f:befbdb005f6d72371ccd16df69e3021e:ftjam/.footprint
+f:f3903989d97944c499cf1a4f75e6678a:gtklock-powerbar-module/.signature
+f:a2b1255f45a48f690845826e96c79ce8:gtklock-powerbar-module/Pkgfile
+f:295edfbd34866d192a093fa293955282:gtklock-powerbar-module/.footprint
 f:4d63d927b585d9b22a06164b95a05e6f:gtklock/.signature
 f:0a651a8c5c6f04a8b18d4870acca0e34:gtklock/Pkgfile
 f:7b1d297b6c94898a607ed1e9637b2e6b:gtklock/.footprint
