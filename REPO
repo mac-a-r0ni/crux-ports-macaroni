@@ -20,6 +20,7 @@ d:libportal
 d:rust-bin
 d:broadcom-wl
 d:dbus-python3
+d:gtk-session-lock
 d:xorg-font-bh-ttf
 d:xwayland-satellite
 d:libtheora
@@ -130,6 +131,9 @@ f:a2b71a20ce72211554f120018eeb5438:broadcom-wl/012-linux517.patch
 f:7c4748a7e7bf71489484d8d9a29600d4:dbus-python3/.signature
 f:0cc20d583fb931e27aaf350c1625895a:dbus-python3/Pkgfile
 f:d9dd4cc2e2afcaa1d904ba521f1ede24:dbus-python3/.footprint
+f:f293fd06d3b478aecc6759e599ff68b5:gtk-session-lock/.signature
+f:37fa53705fcac0f00aae97d103b54c7f:gtk-session-lock/Pkgfile
+f:7ad30313d3f294a6e436a0de0e2a178a:gtk-session-lock/.footprint
 f:8a30087027e320d7b680f58a5f3d7fb0:xorg-font-bh-ttf/post-install
 f:f776225a8b67cd2b93022e988eed3965:xorg-font-bh-ttf/.signature
 f:85c1a17db14bffe2e979631584264961:xorg-font-bh-ttf/Pkgfile

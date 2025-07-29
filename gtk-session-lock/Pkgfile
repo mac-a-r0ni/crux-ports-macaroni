@@ -1,0 +1,26 @@
+# Description: A library to create screen lockers for Wayland using the ext-session-lock protocol
+# URL: https://github.com/Cu3PO42/gtk-session-lock
+# Maintainer: Jay Lanagan, j at lngn dot net
+# Depends on: wayland-protocols gtk3
+# Optional: gobject-introspection vala
+
+name=gtk-session-lock
+version=0.2.0
+release=1
+source=(https://github.com/Cu3PO42/gtk-session-lock/archive/v${version}/$name-$version.tar.gz)
+
+build() {
+
+  prt-get isinst vala && PKGMK_GSL+=' -D vapi=true'
+  prt-get isinst gobject-introspection && PKGMK_GSL+=' -D introspection=true'
+
+  meson setup $name-$version build $PKGMK_GSL \
+    --prefix=/usr \
+    --buildtype=plain \
+    -D b_lto=true \
+    -D b_pie=true
+
+  meson compile -C build
+  meson install -C build --destdir $PKG
+
+}

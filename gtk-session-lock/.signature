@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/macaroni.pub
+RWTGIaBQjhQnA+OrGgXGwhM9fhXaHwTan6qltVtiuBb2h4xQhx/WF1RktH0npPT+Ec1tjIjxCQxlFKXicSVe+kf/j2NjLlXH2A0=
+SHA256 (Pkgfile) = d5027446ab7e72fd3c54080272f1f8db4abf9edd2eb894ee065fee1cae0cf870
+SHA256 (.footprint) = 650af669cf887f7376f8bdec4f775ae773c64880dd708b7274f4fce69452fe03
+SHA256 (gtk-session-lock-0.2.0.tar.gz) = a4245c6930580c15ed263b9a7bb7e39f47693baec78be1026b4e0e28b233cb4e
