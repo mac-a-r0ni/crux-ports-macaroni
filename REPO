@@ -118,10 +118,12 @@ f:471f0172d6b4b31f69490e25be8fb61f:broadcom-wl/014-linux414.patch
 f:9fc3fb4f1f7059b4dd61dbac565e5415:broadcom-wl/005-debian-fix-kernel-warnings.patch
 f:fabbf528164f5e3a9dcf46f46a678f86:broadcom-wl/001-null-pointer-fix.patch
 f:b06f78988b57fc7eda182c5ea3218821:broadcom-wl/post-install
+f:7ee636b32584da74d0c87b875e247e01:broadcom-wl/020-linux615.patch
 f:399b465a6240575062da139f07c85154:broadcom-wl/013-linux518.patch
 f:39f154dac0e88c6998fe5cbe0c5588df:broadcom-wl/010-linux56.patch
 f:76c168a0271cb57d2539a10877979fbd:broadcom-wl/002-rdtscl.patch
 f:b2c2f1ccb334d6ee034b458a255a4769:broadcom-wl/018-linux613.patch
+f:341e5c73b3d5767fdb9c296d8468c0aa:broadcom-wl/.signature
 f:83e58fae288058a57f5a74ec56dc8d69:broadcom-wl/009-fix_mac_profile_discrepancy.patch
 f:5dbf296e82b1f05a33abddd22eaabd2b:broadcom-wl/019-linux614.patch
 f:ff533baa437b6c39ed6f05eccf3ad962:broadcom-wl/b43_blacklist.conf
@@ -129,9 +131,10 @@ f:45a2e556ac496a4a01172003b478ca5d:broadcom-wl/004-linux48.patch
 f:2ffbab582f9dd2b5c8af045f8d8f29c7:broadcom-wl/007-linux412.patch
 f:c5074307a37698b11780237beb8f52b2:broadcom-wl/003-linux47.patch
 f:8ac791a4d865b7a95e149193120e358e:broadcom-wl/000-remove-time_date-macros.patch
-f:2768c909e5ae2c456f606a9bf171352f:broadcom-wl/Pkgfile
+f:6c1aa9ddf383ac2f1111ffde6e50b496:broadcom-wl/Pkgfile
 f:28a46caad877bc4d04cd33a5232d9d99:broadcom-wl/006-linux411.patch
 f:7d860b919998e247ebfd04b322e81414:broadcom-wl/011-linux59.patch
+f:a4261d25bc8a79f6ba7b42070d14faa7:broadcom-wl/.footprint
 f:2a8e49769de4497153a30e79d6cf04c0:broadcom-wl/016-linux601.patch
 f:7a790808fb097fe4408678a385a34b7a:broadcom-wl/017-linux612.patch
 f:eedf436ad75d278ff783055310095f70:broadcom-wl/015-linux600.patch

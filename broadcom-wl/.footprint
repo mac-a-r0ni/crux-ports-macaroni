@@ -1,0 +1,9 @@
+drwxr-xr-x	root/root	etc/
+drwxr-xr-x	root/root	etc/modprobe.d/
+-rw-r--r--	root/root	etc/modprobe.d/b43_blacklist.conf
+drwxr-xr-x	root/root	lib/
+drwxr-xr-x	root/root	lib/modules/
+drwxr-xr-x	root/root	lib/modules/<kernel-version>/
+drwxr-xr-x	root/root	lib/modules/<kernel-version>/kernel/
+drwxr-xr-x	root/root	lib/modules/<kernel-version>/kernel/extra/
+-rw-r--r--	root/root	lib/modules/<kernel-version>/kernel/extra/wl.ko

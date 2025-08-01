@@ -29,6 +29,7 @@ source=(https://docs.broadcom.com/docs-and-downloads/docs/linux_sta/hybrid-v35_6
 	017-linux612.patch
 	018-linux613.patch
 	019-linux614.patch
+	020-linux615.patch
 	b43_blacklist.conf)
 
 build() {
@@ -57,6 +58,7 @@ patch -p1 < $SRC/016-linux601.patch || exit 1
 patch -p1 < $SRC/017-linux612.patch || exit 1
 patch -p1 < $SRC/018-linux613.patch || exit 1
 patch -p1 < $SRC/019-linux614.patch || exit 1
+patch -p1 < $SRC/020-linux615.patch || exit 1
 
 # See https://lkml.org/lkml/2019/3/1/643
 sed -i 's/get_ds()/KERNEL_DS/g' src/wl/sys/wl_iw.c
