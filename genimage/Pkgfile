@@ -1,0 +1,20 @@
+# Description: tool to generate multiple filesystem and flash images from a tree
+# URL: https://github.com/pengutronix/genimage
+# Maintainer: Jay Lanagan, j at lngn dot net
+# Depends on: confuse
+
+name=genimage
+version=19
+release=1
+source=(https://github.com/pengutronix/$name/archive/v$version.tar.gz)
+
+build() {
+  cd $name-$version
+./autogen.sh
+./configure \
+  --prefix=/usr
+
+make
+make install DESTDIR=$PKG
+
+}
