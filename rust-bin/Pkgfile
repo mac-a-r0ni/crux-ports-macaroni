@@ -4,7 +4,7 @@
 # Depends on: llvm
 
 name=rust-bin
-version=1.88.0
+version=1.89.0
 release=1
 LIBC=$(awk -v RS="" -v FS="\n" '/\nusr\/lib\/libc.so\n/ { print $1 }' /var/lib/pkg/db)
 [ "$LIBC" != glibc ] || LIBC=gnu

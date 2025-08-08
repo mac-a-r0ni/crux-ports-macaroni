@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/macaroni.pub
-RWTGIaBQjhQnAxp/D+Ef7sgQiUhAFn2ix1iedFrdXKjk/7v8D06nOFoFFDcTIwl+55NK2hbfFCWjp0QfQyhMafy3RpkuQ80BXQc=
-SHA256 (Pkgfile) = c9dfa396cf6e5d45a0fd06ac4751546e0ce61b28450bb25bd3089da0ba6d2c91
-SHA256 (.footprint) = f7ae34bd30da064dc1e6771c80ddf6301716d1fa91735ac27405425766d9c9d4
-SHA256 (rust-1.88.0-aarch64-unknown-linux-gnu.tar.gz) = dbc75abc31d142eacf15e60d0e51c4f291539974221d217b80786756b0ce1d6b
+RWTGIaBQjhQnA8StMTmX7VH6kIaVEqhCmu4qpHtDAXJC8h5VuWps59F2bXA8uwkgWtEdNBPukLfBAB0+TXi2sHIUOIWpPfzEzA4=
+SHA256 (Pkgfile) = 6192b3e7aa2a4cf720ceda0e131afae1941ee4f5dce1e2c2d7e6f15c5f0c9f09
+SHA256 (.footprint) = 1d8d97ce350607f6833acb53e045cd3021acf94b6bd342c967c4be401d525be7
+SHA256 (rust-1.89.0-aarch64-unknown-linux-gnu.tar.gz) = 26d6de84ac59da702aa8c2f903e3c344e3259da02e02ce92ad1c735916b29a4a

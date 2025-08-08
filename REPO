@@ -110,10 +110,10 @@ f:fac762c2ff0899781130cabff4ac8a3c:libportal/.signature
 f:553882697157761b93f334518f1fecc0:libportal/Pkgfile
 f:261b00bf66652ce613c9421090def194:libportal/.footprint
 f:63039d00e33bb5757e0ae7b8fead0f8e:rust-bin/.nostrip
-f:e059bb55fb0b8d1368cd4e25f8c12745:rust-bin/.signature
+f:2cb264b21bf36c53f03468b2d1b6bb9a:rust-bin/.signature
 f:34a7b82afb7183300a9a6f4f5e05d17b:rust-bin/README
-f:71d835b0144cf4a4ef078a5ec610e801:rust-bin/Pkgfile
-f:fd52576ce852cb25283aa87c8076d1ef:rust-bin/.footprint
+f:28f1193e71a81c19062401b788eda15f:rust-bin/Pkgfile
+f:8b729fb4a5ec9d863134341e18a9f804:rust-bin/.footprint
 f:398815065cb4a573906f00a877b6c111:broadcom-wl/008-linux415.patch
 f:471f0172d6b4b31f69490e25be8fb61f:broadcom-wl/014-linux414.patch
 f:9fc3fb4f1f7059b4dd61dbac565e5415:broadcom-wl/005-debian-fix-kernel-warnings.patch
