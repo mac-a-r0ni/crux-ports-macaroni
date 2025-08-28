@@ -156,8 +156,8 @@ f:8a30087027e320d7b680f58a5f3d7fb0:xorg-font-bh-ttf/post-install
 f:f776225a8b67cd2b93022e988eed3965:xorg-font-bh-ttf/.signature
 f:85c1a17db14bffe2e979631584264961:xorg-font-bh-ttf/Pkgfile
 f:82364eaadb352969effd64fbf2d38480:xorg-font-bh-ttf/.footprint
-f:ec289bce97a3d0e5cdb79a4932c3bc08:xwayland-satellite/.signature
-f:ed3308435c7b1f6825a0a10241016944:xwayland-satellite/Pkgfile
+f:df50127d95a44dfc224968cb2d7ae694:xwayland-satellite/.signature
+f:f0cbb19745e8dd46e3bba20a45da495f:xwayland-satellite/Pkgfile
 f:68f30166f6fd3b4548d147f6fb8ffb70:xwayland-satellite/.footprint
 f:0a09879a4c8386951f65e08118cf323f:genimage/.signature
 f:614207b21c485d3b317119f545cb5a0f:genimage/Pkgfile
