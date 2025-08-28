@@ -4,7 +4,7 @@
 # Depends on: cairo fcft libpng librsvg libxkbcommon xorg-libpixman wayland scdoc tllist wayland-protocols
 
 name=fuzzel
-version=1.12.0
+version=1.13.1
 release=1
 source=(https://codeberg.org/dnkl/fuzzel/archive/$version.tar.gz)
 renames=($name-$version.tar.gz)

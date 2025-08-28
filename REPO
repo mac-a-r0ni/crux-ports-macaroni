@@ -57,8 +57,8 @@ f:d34ef4b9a41d1694cb2d0a41774d9347:python3-gobject/.footprint
 f:ec98fd1e987ea953b4cd54e2369b2211:libscfg/.signature
 f:a48609590769cd35e47bd7ce8522f8fc:libscfg/Pkgfile
 f:47d89904c56d744e7d83b3b06ee1bfec:libscfg/.footprint
-f:2f795d4877f51904cf6b99e37eb6a691:kanshi/.signature
-f:05cf55626afaab46aa0946d2870cce40:kanshi/Pkgfile
+f:2eb9f6b77557dcf3c4ddfb18c3554481:kanshi/.signature
+f:27f8dd0fcdee2e7260c226812dc34ac8:kanshi/Pkgfile
 f:5381e2b3d0f98c7e65fb4034450011d0:kanshi/.footprint
 f:d3670ce511993d07d15b3a5d927fccc7:i3status/.signature
 f:fe7a2d0424ee62239c9b73a8fe8c09a7:i3status/Pkgfile
@@ -81,8 +81,8 @@ f:7984d7f85e8f62d2bcba580d946abf02:pkg-clean/.signature
 f:aacb88d9b143c37883a3e7d501097473:pkg-clean/pkg-clean
 f:79985845cd8b238bfcf379c783864b1d:pkg-clean/Pkgfile
 f:94e6152faea3da16c41cb5aaee049b0f:pkg-clean/.footprint
-f:058152981509dbd8f574388595d21ac4:fuzzel/.signature
-f:9f30ad67549577db2fc39bd496ac62e4:fuzzel/Pkgfile
+f:92871f0821a51addb8805946937cd511:fuzzel/.signature
+f:606080fa3beb2e0e32e1518364f270da:fuzzel/Pkgfile
 f:d877ba1d9379d056095a11e1ac1585e8:fuzzel/.footprint
 f:cd0ad57923266533dd50f1eee7341337:libliftoff/.signature
 f:5d56b0a61253b965c41f73ac16d1bfc6:libliftoff/Pkgfile

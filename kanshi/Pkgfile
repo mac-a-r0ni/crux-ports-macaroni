@@ -1,12 +1,12 @@
-# Description: Application launcher for wlroots based Wayland compositors
+# Description: Dynamic output configuration for Wayland WMs
 # URL: https://gitlab.freedesktop.org/emersion/kanshi
 # Maintainer: Jay Lanagan, j at lngn dot net
 # Depends on: libscfg scdoc wayland
 
 name=kanshi
-version=1.7.0
+version=1.8.0
 release=1
-source=(https://gitlab.freedesktop.org/emersion/kanshi/-/archive/v1.7.0/kanshi-v1.7.0.tar.gz)
+source=(https://gitlab.freedesktop.org/emersion/kanshi/-/archive/v${version}/kanshi-v{$version}.tar.gz)
 renames=($name-$version.tar.gz)
 
 build() {
