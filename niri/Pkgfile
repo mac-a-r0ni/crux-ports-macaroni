@@ -5,7 +5,7 @@
 # Optional: alacritty fuzzel mako swaybg swaylock waybar xdg-desktop-portal-gnome xdg-desktop-portal-gtk xwayland-satellite
 
 name=niri
-version=25.05.1
+version=25.08
 release=1
 source=(https://github.com/YaLTeR/$name/archive/v${version}/$name-$version.tar.gz niri.desktop)
 
