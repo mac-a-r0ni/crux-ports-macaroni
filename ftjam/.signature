@@ -1,6 +1,0 @@
-untrusted comment: verify with /etc/ports/macaroni.pub
-RWTGIaBQjhQnAzTtct33cxtMcyCWQS5Q+ebxll+TyS8HVia2driNfGPPlX90EbytNJmNag6CR6cF2daBCtn6KCGFz8AeZrFmngY=
-SHA256 (Pkgfile) = bc636a74be1828d07365e942cb017b932bd50a6221a5113b95f29cd5f64c866b
-SHA256 (.footprint) = 188cfd749c019d69c85be448962910e196a37c1badf683323a4a153ebdbb9bfd
-SHA256 (ftjam-2.5.3rc2.tar.bz2) = a9f8a274049893a4d1f1ad82f7b04f3ebc2554635dd606185e20ba97cb4d64ec
-SHA256 (ftjam-2.5.3-clang16.patch) = c477e1b6b48d9830a873cde7cc41470320ca112c74bff6f3faf5144d4950d48e
