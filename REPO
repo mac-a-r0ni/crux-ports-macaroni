@@ -27,6 +27,7 @@ d:gtk-session-lock
 d:xwayland-satellite
 d:genimage
 d:libtheora
+d:quickshell
 f:94ba4bbf8cb1f9496fb705e126b170b7:wlr-randr/.signature
 f:5ce3fdc152c818d5bbf7b51709574826:wlr-randr/Pkgfile
 f:1b99efa932dcc867f81d36913ec1a7c3:wlr-randr/.footprint
@@ -159,3 +160,7 @@ f:340bf01998d4b7b712dbdc5521ae73ba:genimage/.footprint
 f:d98e792e2ae545ef7becd3f7046d5f12:libtheora/.signature
 f:e1182f1364b821c952b4935001d9df63:libtheora/Pkgfile
 f:4a221ec06a0395ea023b7d3db4e486eb:libtheora/.footprint
+f:3ee64027d975e3bfcbb4d71e22a79238:quickshell/post-install
+f:560391c113a6643100e8e50f3e8dfecc:quickshell/.signature
+f:ced362c19a2b9ce4929f7e3ce38af74c:quickshell/Pkgfile
+f:eb8e9b66e0c2b1a48ab258354840ba3f:quickshell/.footprint
