@@ -8,6 +8,7 @@ d:libdisplay-info
 d:gtklock-powerbar-module
 d:gtklock
 d:cli11
+d:jemalloc
 d:breakpad
 d:pkg-clean
 d:fuzzel
@@ -70,6 +71,9 @@ f:7b1d297b6c94898a607ed1e9637b2e6b:gtklock/.footprint
 f:2355f9a18c6d8d52b720a78fb47ae401:cli11/.signature
 f:0ced58f7cbea2e05fd57a4f328ffd8f6:cli11/Pkgfile
 f:d947eb54641e017979a00e4dcff43636:cli11/.footprint
+f:71e60dd647563bd0de3ab665aa500665:jemalloc/.signature
+f:671d5f87154f5c876df2b71994e08814:jemalloc/Pkgfile
+f:8a328a8ad37fd18d169efa92e03f3d52:jemalloc/.footprint
 f:46bf027ebd4a08b33f48efc9d8398230:breakpad/.signature
 f:37f6699b6fbbbdabca1876649cb364da:breakpad/Pkgfile
 f:241aaaa43c135c7d4478908724a93303:breakpad/.footprint
