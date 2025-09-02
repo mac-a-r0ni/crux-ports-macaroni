@@ -1,0 +1,29 @@
+# Description: client/server crash reporting
+# URL: https://chromium.googlesource.com/breakpad/breakpad/
+# Maintainer: Jay Lanagan, j at lngn dot net
+# Depends on:
+
+name=breakpad
+version=2024.02.16
+release=1
+source=(https://slackware.lngn.net/pub/source/breakpad/v2024.02.16.tar.gz
+        https://slackware.lngn.net/pub/source/breakpad/v2024.02.01.tar.gz)
+
+build() {
+#cd $name-$version
+
+mkdir -p $SRC/src/third_party/lss
+tar -xf ../../v2024.02.01.tar.gz -C src/third_party/lss
+
+    ./configure \
+    --sysconfdir=/etc \
+    --prefix=/usr \
+    --disable-static
+
+make
+make DESTDIR=$PKG install
+
+#rm -r $PKG/usr/lib/*.la
+rm -rf $PKG/usr/share
+
+}

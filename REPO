@@ -7,6 +7,8 @@ d:i3status
 d:libdisplay-info
 d:gtklock-powerbar-module
 d:gtklock
+d:cli11
+d:breakpad
 d:pkg-clean
 d:fuzzel
 d:libliftoff
@@ -65,6 +67,12 @@ f:295edfbd34866d192a093fa293955282:gtklock-powerbar-module/.footprint
 f:4d63d927b585d9b22a06164b95a05e6f:gtklock/.signature
 f:0a651a8c5c6f04a8b18d4870acca0e34:gtklock/Pkgfile
 f:7b1d297b6c94898a607ed1e9637b2e6b:gtklock/.footprint
+f:2355f9a18c6d8d52b720a78fb47ae401:cli11/.signature
+f:0ced58f7cbea2e05fd57a4f328ffd8f6:cli11/Pkgfile
+f:d947eb54641e017979a00e4dcff43636:cli11/.footprint
+f:46bf027ebd4a08b33f48efc9d8398230:breakpad/.signature
+f:37f6699b6fbbbdabca1876649cb364da:breakpad/Pkgfile
+f:241aaaa43c135c7d4478908724a93303:breakpad/.footprint
 f:9262c2ae33181c51820d0cd35a19b52d:pkg-clean/pkg-clean.conf
 f:7984d7f85e8f62d2bcba580d946abf02:pkg-clean/.signature
 f:aacb88d9b143c37883a3e7d501097473:pkg-clean/pkg-clean
