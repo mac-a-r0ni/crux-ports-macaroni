@@ -6,6 +6,7 @@ d:kanshi
 d:i3status
 d:libdisplay-info
 d:gtklock-powerbar-module
+d:dgop
 d:gtklock
 d:cli11
 d:jemalloc
@@ -66,6 +67,9 @@ f:1b0adaa3f45b32a3bb1b4a1d46114929:libdisplay-info/.footprint
 f:f3903989d97944c499cf1a4f75e6678a:gtklock-powerbar-module/.signature
 f:a2b1255f45a48f690845826e96c79ce8:gtklock-powerbar-module/Pkgfile
 f:295edfbd34866d192a093fa293955282:gtklock-powerbar-module/.footprint
+f:ee6410e40155cc0c77193284297a4593:dgop/.signature
+f:7bcebd1ff138aafb6b2cf5a1a2fe310f:dgop/Pkgfile
+f:b7a8a6a32910cb4691a4b43b1252493d:dgop/.footprint
 f:4d63d927b585d9b22a06164b95a05e6f:gtklock/.signature
 f:0a651a8c5c6f04a8b18d4870acca0e34:gtklock/Pkgfile
 f:7b1d297b6c94898a607ed1e9637b2e6b:gtklock/.footprint
