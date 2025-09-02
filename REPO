@@ -17,6 +17,7 @@ d:libliftoff
 d:meld
 d:nbd
 d:mbpfan
+d:autoconf-archive
 d:niri
 d:python3-mako
 d:libatasmart
@@ -104,6 +105,10 @@ f:f0710dc3bf8924a64b53ea6f5fe91a05:mbpfan/.signature
 f:4faef18e9667aa2bf923012958a72bb0:mbpfan/mbpfan.rc
 f:9f41494b29998e37eddc346ca7ccc7fd:mbpfan/Pkgfile
 f:4db96fb8e405ec298771d166a609b5d8:mbpfan/.footprint
+f:33bb1e9867ff1878ec6343ea24d0fc3f:autoconf-archive/312.patch
+f:ea44b2d5a9c2bedf1d413dc7fae3a3bd:autoconf-archive/.signature
+f:a5c57722d37b8c325f8ba20e74318ed2:autoconf-archive/Pkgfile
+f:62d05c422f22f18cb841468619b9ebd3:autoconf-archive/.footprint
 f:1fedd6ec547ec934187a2bdbec9c285c:niri/.signature
 f:842ff7e9af7276cd514db0c5b44268fd:niri/niri.desktop
 f:6e31d0eee29f316562cdc149df9843a0:niri/Pkgfile
