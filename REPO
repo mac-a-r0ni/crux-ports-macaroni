@@ -17,6 +17,7 @@ d:libliftoff
 d:meld
 d:nbd
 d:mbpfan
+d:colloid-gtk-theme
 d:autoconf-archive
 d:niri
 d:python3-mako
@@ -105,6 +106,9 @@ f:f0710dc3bf8924a64b53ea6f5fe91a05:mbpfan/.signature
 f:4faef18e9667aa2bf923012958a72bb0:mbpfan/mbpfan.rc
 f:9f41494b29998e37eddc346ca7ccc7fd:mbpfan/Pkgfile
 f:4db96fb8e405ec298771d166a609b5d8:mbpfan/.footprint
+f:5222d5a54e003bf6e22d223bbe29c7f1:colloid-gtk-theme/.signature
+f:77e276aa0eecbda9b866266d9ac989cf:colloid-gtk-theme/Pkgfile
+f:f55777c672c5517418d89f13289106f1:colloid-gtk-theme/.footprint
 f:33bb1e9867ff1878ec6343ea24d0fc3f:autoconf-archive/312.patch
 f:692d9cf99acc968e0059a4162329fac1:autoconf-archive/.signature
 f:834278a47365702f46a710875210812a:autoconf-archive/Pkgfile
