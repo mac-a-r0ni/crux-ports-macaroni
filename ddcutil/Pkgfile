@@ -1,0 +1,37 @@
+# Description: Display data channel command interface client
+# URL: https://ddcutil.com/
+# Maintainer: Jay Lanagan, j at lngn dot net
+# Depends on: glib jansson libdrm libusb xorg-libx11 xorg-libxext xorg-libxrandr
+# Optional: i2c-tools
+
+name=ddcutil
+version=2.2.1
+release=1
+source=(https://github.com/rockowitz/$name/archive/v${version}/$name-$version.tar.gz)
+
+build() {
+
+  cd $name-$version
+
+  NOCONFIGURE=1 ./autogen.sh
+  ./configure \
+    --prefix=/usr \
+    --exec_prefix=/usr \
+    --libdir=/usr/lib \
+    --sysconfdir=/etc \
+    --includedir=/usr/include \
+    --datarootdir=/usr/share \
+    --localstatedir=/var \
+    --disable-nls
+
+  make
+  make DESTDIR=$PKG install
+
+  mkdir -p $PKG/lib/udev/rules.d
+  mv $PKG/usr/lib/udev/rules.d/* $PKG/lib/udev/rules.d
+  rm -rf $PKG/usr/lib/udev
+  mkdir -p  $PKG/etc/modprobe.d
+  mv $PKG/usr/lib/modules-load.d/* $PKG/etc/modprobe.d/
+  rm -rf $PKG/usr/lib/modules-load.d/
+
+}

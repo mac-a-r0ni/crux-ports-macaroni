@@ -1,0 +1,34 @@
+drwxr-xr-x	root/root	etc/
+drwxr-xr-x	root/root	etc/modprobe.d/
+-rw-r--r--	root/root	etc/modprobe.d/ddcutil.conf
+drwxr-xr-x	root/root	lib/
+drwxr-xr-x	root/root	lib/udev/
+drwxr-xr-x	root/root	lib/udev/rules.d/
+-rw-r--r--	root/root	lib/udev/rules.d/60-ddcutil-i2c.rules
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/ddcutil
+drwxr-xr-x	root/root	usr/include/
+-rw-r--r--	root/root	usr/include/ddcutil_c_api.h
+-rw-r--r--	root/root	usr/include/ddcutil_macros.h
+-rw-r--r--	root/root	usr/include/ddcutil_status_codes.h
+-rw-r--r--	root/root	usr/include/ddcutil_types.h
+drwxr-xr-x	root/root	usr/lib/
+drwxr-xr-x	root/root	usr/lib/cmake/
+drwxr-xr-x	root/root	usr/lib/cmake/ddcutil/
+-rw-r--r--	root/root	usr/lib/cmake/ddcutil/FindDDCUtil.cmake
+lrwxrwxrwx	root/root	usr/lib/libddcutil.so -> libddcutil.so.5.3.0
+lrwxrwxrwx	root/root	usr/lib/libddcutil.so.5 -> libddcutil.so.5.3.0
+-rwxr-xr-x	root/root	usr/lib/libddcutil.so.5.3.0
+drwxr-xr-x	root/root	usr/lib/pkgconfig/
+-rw-r--r--	root/root	usr/lib/pkgconfig/ddcutil.pc
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/ddcutil/
+drwxr-xr-x	root/root	usr/share/ddcutil/data/
+-rw-r--r--	root/root	usr/share/ddcutil/data/60-ddcutil-i2c.rules
+-rw-r--r--	root/root	usr/share/ddcutil/data/60-ddcutil-usb.rules
+-rw-r--r--	root/root	usr/share/ddcutil/data/90-nvidia-i2c.conf
+-rw-r--r--	root/root	usr/share/ddcutil/data/nvidia-i2c.conf
+drwxr-xr-x	root/root	usr/share/man/
+drwxr-xr-x	root/root	usr/share/man/man1/
+-rw-r--r--	root/root	usr/share/man/man1/ddcutil.1.gz

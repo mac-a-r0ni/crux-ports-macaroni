@@ -6,6 +6,7 @@ d:libscfg
 d:kanshi
 d:i3status
 d:cava
+d:ddcutil
 d:libdisplay-info
 d:ttf-fira-code
 d:gtklock-powerbar-module
@@ -76,6 +77,9 @@ f:6532782ee581f65e9ff9d9320e0edc58:i3status/.footprint
 f:7754bb53304aa28941edc88c2df6cd3a:cava/.signature
 f:50420c1308dc6c297f618ae90be1a94c:cava/Pkgfile
 f:fa8bb55250229cfd0732b92cab1997d9:cava/.footprint
+f:89f250e48bfa6e8abb0f1a1af1858701:ddcutil/.signature
+f:005946e19940e3a4979f30aeb12e0635:ddcutil/Pkgfile
+f:36d857e4edefe827d12d43eb99a4596b:ddcutil/.footprint
 f:ac36d21a0e4ab4f81bf037a78e4206c5:libdisplay-info/.signature
 f:a455882323ff153087fee11b1ec560f2:libdisplay-info/Pkgfile
 f:1b0adaa3f45b32a3bb1b4a1d46114929:libdisplay-info/.footprint
