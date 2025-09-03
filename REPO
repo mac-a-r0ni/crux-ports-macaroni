@@ -28,6 +28,7 @@ d:python3-mako
 d:libatasmart
 d:colloid-icon-theme
 d:ufw
+d:gtk-engine-murrine
 d:matugen
 d:inter-font
 d:rust-bin
@@ -151,6 +152,9 @@ f:b6812db139ff6785b0d8143ce0d081e0:macaroni.pub
 f:0e273d831f5d6640e60ba71a283e28c2:ufw/.signature
 f:f69f19828fa45662dbdca0d126357751:ufw/Pkgfile
 f:9d5ac674dd31e21aa7c0738267512601:ufw/.footprint
+f:4f09b634dcc8fb213eaf0586a3b9371d:gtk-engine-murrine/.signature
+f:6ad6d353a450922144a2f9f207f61f32:gtk-engine-murrine/Pkgfile
+f:b260a94ab9857f2a7ccf1e20b55278bd:gtk-engine-murrine/.footprint
 f:ba23eb8951428e792e33b4be30395d49:matugen/.signature
 f:53b487c3d41bfde75d826679a3063c9e:matugen/Pkgfile
 f:8d10fd1bba8d1d8c82cf4c0ace69eabb:matugen/.footprint
