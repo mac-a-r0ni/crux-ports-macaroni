@@ -4,6 +4,7 @@ d:linux-arm64
 d:libscfg
 d:kanshi
 d:i3status
+d:cava
 d:libdisplay-info
 d:gtklock-powerbar-module
 d:dgop
@@ -22,6 +23,7 @@ d:autoconf-archive
 d:niri
 d:python3-mako
 d:libatasmart
+d:colloid-icon-theme
 d:ufw
 d:rust-bin
 d:broadcom-wl
@@ -63,6 +65,9 @@ f:5381e2b3d0f98c7e65fb4034450011d0:kanshi/.footprint
 f:d3670ce511993d07d15b3a5d927fccc7:i3status/.signature
 f:fe7a2d0424ee62239c9b73a8fe8c09a7:i3status/Pkgfile
 f:6532782ee581f65e9ff9d9320e0edc58:i3status/.footprint
+f:7754bb53304aa28941edc88c2df6cd3a:cava/.signature
+f:50420c1308dc6c297f618ae90be1a94c:cava/Pkgfile
+f:fa8bb55250229cfd0732b92cab1997d9:cava/.footprint
 f:ac36d21a0e4ab4f81bf037a78e4206c5:libdisplay-info/.signature
 f:a455882323ff153087fee11b1ec560f2:libdisplay-info/Pkgfile
 f:1b0adaa3f45b32a3bb1b4a1d46114929:libdisplay-info/.footprint
@@ -123,6 +128,10 @@ f:59071a2f189ca441eed0c242ce11b6b0:python3-mako/.footprint
 f:e25284d6f7a82d06a89569f9a2d57622:libatasmart/.signature
 f:ffb5fd4df8235d9e60f6220d70053116:libatasmart/Pkgfile
 f:076c350230a7e161f1feab580ecbcb42:libatasmart/.footprint
+f:94c80954262aad44f26eef441e3b2a65:colloid-icon-theme/post-install
+f:74458adb2f36bfa97cf15e9a51a7c463:colloid-icon-theme/.signature
+f:a3b7a45b2c69f36545d8ea04905b6c31:colloid-icon-theme/Pkgfile
+f:e670072f0db481f2c3c676ccf6fef0cd:colloid-icon-theme/.footprint
 f:b6812db139ff6785b0d8143ce0d081e0:macaroni.pub
 f:0e273d831f5d6640e60ba71a283e28c2:ufw/.signature
 f:f69f19828fa45662dbdca0d126357751:ufw/Pkgfile
