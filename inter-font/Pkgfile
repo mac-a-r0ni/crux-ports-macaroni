@@ -1,0 +1,17 @@
+# Description: The Inter font family
+# URL: https://github.com/rsms/inter
+# Maintainer: Jay Lanagan, j at lngn dot net
+
+name=inter-font
+version=4.1
+release=1
+source=(https://github.com/rsms/inter/releases/download/v4.1/Inter-4.1.zip)
+
+build() {
+
+  mkdir -p $PKG/usr/share/fonts/{TTF,OTF}
+  cp -a extras/otf/*.otf $PKG/usr/share/fonts/OTF
+  cp -a extras/ttf/*.ttf $PKG/usr/share/fonts/TTF
+  cp -a *.ttf $PKG/usr/share/fonts/TTF
+
+}

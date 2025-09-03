@@ -25,6 +25,8 @@ d:python3-mako
 d:libatasmart
 d:colloid-icon-theme
 d:ufw
+d:matugen
+d:inter-font
 d:rust-bin
 d:broadcom-wl
 d:dbus-python3
@@ -136,6 +138,12 @@ f:b6812db139ff6785b0d8143ce0d081e0:macaroni.pub
 f:0e273d831f5d6640e60ba71a283e28c2:ufw/.signature
 f:f69f19828fa45662dbdca0d126357751:ufw/Pkgfile
 f:9d5ac674dd31e21aa7c0738267512601:ufw/.footprint
+f:ba23eb8951428e792e33b4be30395d49:matugen/.signature
+f:53b487c3d41bfde75d826679a3063c9e:matugen/Pkgfile
+f:8d10fd1bba8d1d8c82cf4c0ace69eabb:matugen/.footprint
+f:ddbaf747f0bb967ae3ae865ba50fb3ac:inter-font/.signature
+f:b2d930def061d6dd41d2de30b4190edf:inter-font/Pkgfile
+f:d58726164b99d9ad51a7c55829ef1031:inter-font/.footprint
 f:63039d00e33bb5757e0ae7b8fead0f8e:rust-bin/.nostrip
 f:2cb264b21bf36c53f03468b2d1b6bb9a:rust-bin/.signature
 f:34a7b82afb7183300a9a6f4f5e05d17b:rust-bin/README
