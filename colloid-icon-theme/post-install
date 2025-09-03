@@ -1,0 +1,7 @@
+#!/bin/sh
+
+/usr/bin/gtk-update-icon-cache -f -t /usr/share/icons/Colloid
+/usr/bin/gtk-update-icon-cache -f -t /usr/share/icons/Colloid-Dark
+/usr/bin/gtk-update-icon-cache -f -t /usr/share/icons/Colloid-Light
+
+# EOF

@@ -1,0 +1,22 @@
+# Description: Colloid icon theme for linux
+# URL: https://github.com/vinceliuice/Colloid-icon-theme
+# Maintainer: Jay Lanagan, j at lngn dot net
+# Depends on: gtk-engine-murrine
+
+name=colloid-icon-theme
+version=2025-07-19
+release=1
+source=(https://github.com/vinceliuice/Colloid-icon-theme/archive/2025-07-19/Colloid-icon-theme-2025-07-19.tar.gz)
+renames=($name-$version.tar.gz)
+
+build() {
+
+    cd Colloid-icon-theme-$version
+
+    # Disable running gtk-update-icon-cache
+    sed -i '/gtk-update-icon-cache/d' install.sh
+
+    install -d $PKG/usr/share/icons
+    ./install.sh -s default -t default -d $PKG/usr/share/icons
+
+}
