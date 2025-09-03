@@ -1,0 +1,13 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/fonts/
+drwxr-xr-x	root/root	usr/share/fonts/OTF/
+-rw-r--r--	root/root	usr/share/fonts/OTF/MaterialIconsOutlined-Regular.otf
+-rw-r--r--	root/root	usr/share/fonts/OTF/MaterialIconsRound-Regular.otf
+-rw-r--r--	root/root	usr/share/fonts/OTF/MaterialIconsSharp-Regular.otf
+-rw-r--r--	root/root	usr/share/fonts/OTF/MaterialIconsTwoTone-Regular.otf
+drwxr-xr-x	root/root	usr/share/fonts/TTF/
+-rw-r--r--	root/root	usr/share/fonts/TTF/MaterialIcons-Regular.ttf
+-rw-r--r--	root/root	usr/share/fonts/TTF/MaterialSymbolsOutlined[FILL,GRAD,opsz,wght].ttf
+-rw-r--r--	root/root	usr/share/fonts/TTF/MaterialSymbolsRounded[FILL,GRAD,opsz,wght].ttf
+-rw-r--r--	root/root	usr/share/fonts/TTF/MaterialSymbolsSharp[FILL,GRAD,opsz,wght].ttf

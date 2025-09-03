@@ -1,6 +1,7 @@
 d:wlr-randr
 d:regreet
 d:linux-arm64
+d:ttf-material-symbols-variable
 d:libscfg
 d:kanshi
 d:i3status
@@ -60,6 +61,9 @@ f:7079a75da4ddcdc7b7d1756370b455df:linux-arm64/2980_kbuild-gcc15-gnu23-to-gnu11-
 f:c6ded9c6f280dbd98580bf341cee4131:linux-arm64/1510_fs-enable-link-security-restrictions-by-default.patch
 f:e3b96526057307d88af672c195891470:linux-arm64/2990_libbpf-v2-workaround-Wmaybe-uninitialized-false-pos.patch
 f:ccbbf95b67a7b380dad31f9b813a7c0b:linux-arm64/5010_enable-cpu-optimizations-universal.patch
+f:41e7f4fe99d5614c041a9cd2fc9bfe5a:ttf-material-symbols-variable/.signature
+f:4a149a7357d3e6f9602e402f36ef40d6:ttf-material-symbols-variable/Pkgfile
+f:7f832bea441d1398935f94367a113464:ttf-material-symbols-variable/.footprint
 f:ec98fd1e987ea953b4cd54e2369b2211:libscfg/.signature
 f:a48609590769cd35e47bd7ce8522f8fc:libscfg/Pkgfile
 f:47d89904c56d744e7d83b3b06ee1bfec:libscfg/.footprint
