@@ -1,0 +1,16 @@
+# Description: Quickshell optimized for niri & hyprland.
+# URL: https://github.com/AvengeMedia/DankMaterialShell
+# Maintainer: Jay Lanagan, j at lngn dot net
+Depends on: brightnessctl cliphist colloid-gtk-theme colloid-icon-theme ddcutil dgop material-design-icons matugen wl-clipboard quickshell
+
+name=dankmaterialshell
+version=0.0.6
+release=1
+source=(https://github.com/bbedward/DankMaterialShell/archive/v${version}/DankMaterialShell-$version.tar.gz)
+
+build() {
+
+  install -dm755 $PKG/etc/xdg/quickshell/DankMaterialShell
+  cp -r DankMaterialShell-$version/* $PKG/etc/xdg/quickshell/DankMaterialShell/
+
+}
