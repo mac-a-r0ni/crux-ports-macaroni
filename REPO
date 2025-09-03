@@ -192,8 +192,8 @@ f:2a8e49769de4497153a30e79d6cf04c0:broadcom-wl/016-linux601.patch
 f:7a790808fb097fe4408678a385a34b7a:broadcom-wl/017-linux612.patch
 f:eedf436ad75d278ff783055310095f70:broadcom-wl/015-linux600.patch
 f:a2b71a20ce72211554f120018eeb5438:broadcom-wl/012-linux517.patch
-f:86e910cb975ac506aeb2d982720e8fe9:dankmaterialshell/.signature
-f:e6cb6fd06be07063e6994785dd3a79bc:dankmaterialshell/Pkgfile
+f:7987269314b32915e5608bb109c7d27c:dankmaterialshell/.signature
+f:7f957158058bd8f81b8713b5bb7a3467:dankmaterialshell/Pkgfile
 f:042d40992c6105b4698a0633c2fc24a7:dankmaterialshell/.footprint
 f:7c4748a7e7bf71489484d8d9a29600d4:dbus-python3/.signature
 f:0cc20d583fb931e27aaf350c1625895a:dbus-python3/Pkgfile

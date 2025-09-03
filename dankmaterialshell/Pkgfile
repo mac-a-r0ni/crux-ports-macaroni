@@ -1,7 +1,7 @@
 # Description: Quickshell optimized for niri & hyprland.
 # URL: https://github.com/AvengeMedia/DankMaterialShell
 # Maintainer: Jay Lanagan, j at lngn dot net
-# Depends on: brightnessctl cliphist colloid-gtk-theme colloid-icon-theme ddcutil dgop ttf-material-symbols-variable matugen wl-clipboard quickshell
+# Depends on: brightnessctl cava cliphist colloid-gtk-theme colloid-icon-theme ddcutil dgop inter-font ttf-fira-code ttf-material-symbols-variable matugen wl-clipboard quickshell
 
 name=dankmaterialshell
 version=0.0.6
