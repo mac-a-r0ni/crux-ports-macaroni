@@ -1,7 +1,7 @@
 # Description: Flexible toolkit for making desktop shells with QtQuick
 # URL: https://quickshell.org
 # Maintainer: Jay Lanagan, j at lngn dot net
-# Depends on: breakpad cli11 jemalloc libdrm libxcb pipewire mesa qt6-base qt6-declarative qt6-svg qt6-wayland wayland cmake qt6-shadertools spirv-tools wayland-protocols pkgconf
+# Depends on: breakpad cli11 jemalloc libdrm xorg-libxcb pipewire mesa qt6-base qt6-declarative qt6-svg qt6-wayland wayland cmake qt6-shadertools spirv-tools wayland-protocols pkgconf
 
 name=quickshell
 version=0.2.0
