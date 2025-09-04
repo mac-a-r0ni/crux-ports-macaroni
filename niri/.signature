@@ -1,6 +1,0 @@
-untrusted comment: verify with /etc/ports/macaroni.pub
-RWTGIaBQjhQnA0RYprufFJAWlk1p5gx7wqN9Q5XxhtK0gVG0/daH8hxcfSVhT/OfRu+m3dr2e2TNNV4cBYDNat99WXOSC/dh0Qo=
-SHA256 (Pkgfile) = e82eb4f836ebb8ad631e3455c6969978fc7a5b334f283409a0e717dc11b085bb
-SHA256 (.footprint) = f6b9d717c7c69e524f8f5e5942f47f596272fc9135010e7b35fa910e06755165
-SHA256 (niri-25.08.tar.gz) = 69f8227d621ee6389bcd5368a250c189e672d02528472dc5ef0e3eccf80cf0b8
-SHA256 (niri.desktop) = d0c86b064788186b2f28563bc74724f802a5add9f66e3aedb4fda6c76937e1a5

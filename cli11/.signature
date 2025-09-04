@@ -1,5 +1,0 @@
-untrusted comment: verify with /etc/ports/macaroni.pub
-RWTGIaBQjhQnA8Sy7bpx9wJme0UaMUT7mtJuBwjffR4TYX8W4rIcgwgN/fqkVjmZv+1FXR7zjCWsOA4c7UEwT1R00hm8iMtmVQg=
-SHA256 (Pkgfile) = b334dcf4136d58f9d60c604c89183ef35821b8e8736b66a60cb5fb87617940b5
-SHA256 (.footprint) = eff763c2100b25e2bfd07a32f69bc98b29e7f35a7284941a90b0a0ff9d39faf0
-SHA256 (cli11-2.5.0.tar.gz) = 17e02b4cddc2fa348e5dbdbb582c59a3486fa2b2433e70a0c3bacb871334fd55

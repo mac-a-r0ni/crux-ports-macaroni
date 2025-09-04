@@ -1,5 +1,0 @@
-untrusted comment: verify with /etc/ports/macaroni.pub
-RWTGIaBQjhQnA4aiYuyvda+YlDDjnqv9Y3NnhDSyDFM3d/tkT64P2f8EWbDLyeuZgdNLDfIUsUCmDCxHuFnvQTpnl6V4RYST/gA=
-SHA256 (Pkgfile) = c0ff61e5e30b3aacd413b686eaf1733951af79696a9a759c9ff2730ef626a863
-SHA256 (.footprint) = e62079d57ef855c39cbf10c48a7585f4829b643f6424c26d2c530b433833e088
-SHA256 (jemalloc-5.3.0.tar.bz2) = 2db82d1e7119df3e71b7640219b6dfe84789bc0537983c3b7ac4f7189aecfeaa
